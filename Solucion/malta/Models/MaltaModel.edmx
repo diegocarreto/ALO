@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="maltaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="blog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Fecha" Type="date" />
+          <Property Name="Titulo" Type="varchar(max)" />
+          <Property Name="Subtitulo" Type="varchar(max)" />
+          <Property Name="Fuente" Type="varchar(max)" />
+          <Property Name="Descripcion" Type="text" />
+          <Property Name="Etiquetas" Type="varchar(max)" />
+          <Property Name="Url" Type="varchar(max)" />
+          <Property Name="Tipo" Type="varchar" MaxLength="100" />
+          <Property Name="Imagen" Type="varchar" MaxLength="500" />
+          <Property Name="Autor" Type="varchar(max)" />
+          <Property Name="Especies" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="detalles_producto">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id_producto" Type="int" />
+          <Property Name="Tipo" Type="varchar" MaxLength="100" />
+          <Property Name="Descripcion" Type="varchar(max)" />
+          <Property Name="Imagen" Type="varchar" MaxLength="300" />
+          <Property Name="Orden" Type="int" />
+        </EntityType>
+        <EntityType Name="detalles_salud">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id_salud" Type="int" />
+          <Property Name="Tipo" Type="varchar" MaxLength="100" />
+          <Property Name="Descripcion" Type="varchar(max)" />
+          <Property Name="Imagen" Type="varchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="distribuidores">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="No_cte" Type="varchar" MaxLength="100" />
+          <Property Name="Planta" Type="varchar" MaxLength="300" />
+          <Property Name="Nombre_fact" Type="varchar(max)" />
+          <Property Name="Nombre_com" Type="varchar(max)" />
+          <Property Name="Direccion" Type="varchar(max)" />
+          <Property Name="Barrio" Type="varchar(max)" />
+          <Property Name="C_P" Type="varchar(max)" />
+          <Property Name="Ciudad" Type="varchar(max)" />
+          <Property Name="Estado" Type="varchar(max)" />
+          <Property Name="Telefono" Type="varchar(max)" />
+          <Property Name="Celular" Type="varchar(max)" />
+          <Property Name="Mail" Type="varchar(max)" />
+          <Property Name="Categoria" Type="varchar(max)" />
+          <Property Name="Horario" Type="varchar(max)" />
+          <Property Name="Latitud" Type="varchar(max)" />
+          <Property Name="Longitud" Type="varchar(max)" />
+          <Property Name="Mapa" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="especies">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="100" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="500" />
+          <Property Name="Tipo" Type="varchar" MaxLength="300" />
+          <Property Name="Imagen" Type="varchar" MaxLength="300" />
+          <Property Name="Background" Type="varchar" MaxLength="300" />
+          <Property Name="Icono" Type="varchar" MaxLength="300" />
+          <Property Name="Orden" Type="int" Nullable="false" />
+          <Property Name="OrdenTipo" Type="int" Nullable="false" />
+          <Property Name="Plan" Type="varchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="lineas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id_marca" Type="int" />
+          <Property Name="Nombre" Type="varchar" MaxLength="100" />
+          <Property Name="Descripcion" Type="varchar(max)" />
+          <Property Name="Target" Type="varchar" MaxLength="100" />
+          <Property Name="Orden" Type="int" />
+        </EntityType>
+        <EntityType Name="marcas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id_especie" Type="int" />
+          <Property Name="Nombre" Type="varchar" MaxLength="200" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="1000" />
+          <Property Name="Imagen" Type="varchar" MaxLength="300" />
+          <Property Name="Background" Type="varchar" MaxLength="300" />
+          <Property Name="Target" Type="varchar" MaxLength="100" />
+          <Property Name="Orden" Type="int" />
+        </EntityType>
+        <EntityType Name="productos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id_linea" Type="int" />
+          <Property Name="Nombre" Type="varchar" MaxLength="300" />
+          <Property Name="Descripcion" Type="varchar(max)" />
+          <Property Name="Imagen" Type="varchar" MaxLength="300" />
+          <Property Name="Brochure" Type="varchar" MaxLength="300" />
+          <Property Name="Vademecum" Type="varchar" MaxLength="300" />
+          <Property Name="Video" Type="varchar" MaxLength="300" />
+          <Property Name="Params_dist" Type="varchar" MaxLength="300" />
+          <Property Name="Proteina" Type="nchar" MaxLength="10" />
+          <Property Name="Grasa" Type="nchar" MaxLength="10" />
+          <Property Name="Humedad" Type="nchar" MaxLength="10" />
+          <Property Name="Fibra" Type="nchar" MaxLength="10" />
+          <Property Name="Ceniza" Type="nchar" MaxLength="10" />
+          <Property Name="Eln" Type="nchar" MaxLength="10" />
+          <Property Name="Orden" Type="int" />
+          <Property Name="Keyword" Type="varchar" MaxLength="500" />
+          <Property Name="Target" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="salud">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="300" />
+          <Property Name="Descripcion" Type="varchar(max)" />
+          <Property Name="Imagen" Type="varchar" MaxLength="300" />
+          <Property Name="Tipo" Type="varchar" MaxLength="300" />
+          <Property Name="Indicaciones" Type="varchar(max)" />
+          <Property Name="Contraindicaciones" Type="varchar(max)" />
+          <Property Name="Administracion" Type="varchar(max)" />
+          <Property Name="Interaccion" Type="varchar(max)" />
+          <Property Name="Reacciones" Type="varchar(max)" />
+          <Property Name="Uso" Type="varchar(max)" />
+          <Property Name="Brochure" Type="varchar" MaxLength="300" />
+          <Property Name="Vademecum" Type="varchar" MaxLength="300" />
+          <Property Name="Video" Type="varchar" MaxLength="300" />
+          <Property Name="Params_dist" Type="varchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityContainer Name="maltaModelStoreContainer">
+          <EntitySet Name="blog" EntityType="Self.blog" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="detalles_producto" EntityType="Self.detalles_producto" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="detalles_salud" EntityType="Self.detalles_salud" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="distribuidores" EntityType="Self.distribuidores" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="especies" EntityType="Self.especies" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="lineas" EntityType="Self.lineas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="marcas" EntityType="Self.marcas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="productos" EntityType="Self.productos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="salud" EntityType="Self.salud" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="maltaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="MaltaDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="detalles_producto" EntityType="maltaModel.detalles_producto" />
+          <EntitySet Name="especies" EntityType="maltaModel.especies" />
+          <EntitySet Name="marcas" EntityType="maltaModel.marcas" />
+          <EntitySet Name="productos" EntityType="maltaModel.productos" />
+          <AssociationSet Name="FK_detalles_producto_productos" Association="maltaModel.FK_detalles_producto_productos">
+            <End Role="productos" EntitySet="productos" />
+            <End Role="detalles_producto" EntitySet="detalles_producto" />
+          </AssociationSet>
+          <AssociationSet Name="FK_productos_productos" Association="maltaModel.FK_productos_productos">
+            <End Role="productos" EntitySet="productos" />
+            <End Role="productos1" EntitySet="productos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_marcas_especies" Association="maltaModel.FK_marcas_especies">
+            <End Role="especies" EntitySet="especies" />
+            <End Role="marcas" EntitySet="marcas" />
+          </AssociationSet>
+          <EntitySet Name="lineas" EntityType="maltaModel.lineas" />
+          <AssociationSet Name="FK_lineas_marcas" Association="maltaModel.FK_lineas_marcas">
+            <End Role="marcas" EntitySet="marcas" />
+            <End Role="lineas" EntitySet="lineas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_productos_lineas" Association="maltaModel.FK_productos_lineas">
+            <End Role="lineas" EntitySet="lineas" />
+            <End Role="productos" EntitySet="productos" />
+          </AssociationSet>
+          <EntitySet Name="sysdiagrams" EntityType="maltaModel.sysdiagrams" />
+          <EntitySet Name="detalles_salud" EntityType="maltaModel.detalles_salud" />
+          <EntitySet Name="salud" EntityType="maltaModel.salud" />
+          <EntitySet Name="blog" EntityType="maltaModel.blog" />
+          <EntitySet Name="distribuidores" EntityType="maltaModel.distribuidores" />
+        </EntityContainer>
+        <EntityType Name="detalles_producto">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id_producto" Type="Int32" />
+          <Property Name="Tipo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Imagen" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="productos" Relationship="maltaModel.FK_detalles_producto_productos" FromRole="detalles_producto" ToRole="productos" />
+          <Property Name="Orden" Type="Int32" />
+        </EntityType>
+        <EntityType Name="especies">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Tipo" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Imagen" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Background" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Icono" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="marcas" Relationship="maltaModel.FK_marcas_especies" FromRole="especies" ToRole="marcas" />
+          <Property Name="Orden" Type="Int32" Nullable="false" />
+          <Property Name="OrdenTipo" Type="Int32" Nullable="false" />
+          <Property Name="Plan" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="marcas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id_especie" Type="Int32" />
+          <Property Name="Nombre" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Imagen" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Background" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="especies" Relationship="maltaModel.FK_marcas_especies" FromRole="marcas" ToRole="especies" />
+          <NavigationProperty Name="lineas" Relationship="maltaModel.FK_lineas_marcas" FromRole="marcas" ToRole="lineas" />
+          <Property Name="Target" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Orden" Type="Int32" />
+        </EntityType>
+        <EntityType Name="productos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id_linea" Type="Int32" />
+          <Property Name="Nombre" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Imagen" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Brochure" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Vademecum" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Video" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Params_dist" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Proteina" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Grasa" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Humedad" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Ceniza" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Eln" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="detalles_producto" Relationship="maltaModel.FK_detalles_producto_productos" FromRole="productos" ToRole="detalles_producto" />
+          <NavigationProperty Name="productos1" Relationship="maltaModel.FK_productos_productos" FromRole="productos" ToRole="productos1" />
+          <NavigationProperty Name="productos2" Relationship="maltaModel.FK_productos_productos" FromRole="productos1" ToRole="productos" />
+          <NavigationProperty Name="lineas" Relationship="maltaModel.FK_productos_lineas" FromRole="productos" ToRole="lineas" />
+          <Property Name="Fibra" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Orden" Type="Int32" />
+          <Property Name="Keyword" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Target" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_detalles_producto_productos">
+          <End Type="maltaModel.productos" Role="productos" Multiplicity="0..1" />
+          <End Type="maltaModel.detalles_producto" Role="detalles_producto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="productos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="detalles_producto">
+              <PropertyRef Name="Id_producto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_productos_productos">
+          <End Type="maltaModel.productos" Role="productos" Multiplicity="1" />
+          <End Type="maltaModel.productos" Role="productos1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="productos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="productos1">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_marcas_especies">
+          <End Type="maltaModel.especies" Role="especies" Multiplicity="0..1" />
+          <End Type="maltaModel.marcas" Role="marcas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="especies">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="marcas">
+              <PropertyRef Name="Id_especie" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="lineas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id_marca" Type="Int32" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="marcas" Relationship="maltaModel.FK_lineas_marcas" FromRole="lineas" ToRole="marcas" />
+          <NavigationProperty Name="productos" Relationship="maltaModel.FK_productos_lineas" FromRole="lineas" ToRole="productos" />
+          <Property Name="Target" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Orden" Type="Int32" />
+        </EntityType>
+        <Association Name="FK_lineas_marcas">
+          <End Type="maltaModel.marcas" Role="marcas" Multiplicity="0..1" />
+          <End Type="maltaModel.lineas" Role="lineas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="marcas">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="lineas">
+              <PropertyRef Name="Id_marca" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_productos_lineas">
+          <End Type="maltaModel.lineas" Role="lineas" Multiplicity="0..1" />
+          <End Type="maltaModel.productos" Role="productos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="lineas">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="productos">
+              <PropertyRef Name="Id_linea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="detalles_salud">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id_salud" Type="Int32" />
+          <Property Name="Tipo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Imagen" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="salud">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Imagen" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Tipo" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Indicaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Contraindicaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Administracion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Interaccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Reacciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Uso" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Brochure" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Vademecum" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Video" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Params_dist" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="blog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Fecha" Type="DateTime" Precision="0" />
+          <Property Name="Titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Subtitulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Etiquetas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Tipo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Imagen" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Autor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Especies" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="distribuidores">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="No_cte" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Planta" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_fact" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_com" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Barrio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="C_P" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Ciudad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Telefono" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Celular" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Categoria" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Horario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Latitud" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Longitud" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Mapa" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="maltaModelStoreContainer" CdmEntityContainer="MaltaDBEntities">
+          <EntitySetMapping Name="detalles_producto">
+            <EntityTypeMapping TypeName="maltaModel.detalles_producto">
+              <MappingFragment StoreEntitySet="detalles_producto">
+                <ScalarProperty Name="Orden" ColumnName="Orden" />
+                <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Id_producto" ColumnName="Id_producto" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="especies">
+            <EntityTypeMapping TypeName="maltaModel.especies">
+              <MappingFragment StoreEntitySet="especies">
+                <ScalarProperty Name="Plan" ColumnName="Plan" />
+                <ScalarProperty Name="OrdenTipo" ColumnName="OrdenTipo" />
+                <ScalarProperty Name="Orden" ColumnName="Orden" />
+                <ScalarProperty Name="Icono" ColumnName="Icono" />
+                <ScalarProperty Name="Background" ColumnName="Background" />
+                <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="marcas">
+            <EntityTypeMapping TypeName="maltaModel.marcas">
+              <MappingFragment StoreEntitySet="marcas">
+                <ScalarProperty Name="Orden" ColumnName="Orden" />
+                <ScalarProperty Name="Target" ColumnName="Target" />
+                <ScalarProperty Name="Background" ColumnName="Background" />
+                <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id_especie" ColumnName="Id_especie" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="productos">
+            <EntityTypeMapping TypeName="maltaModel.productos">
+              <MappingFragment StoreEntitySet="productos">
+                <ScalarProperty Name="Target" ColumnName="Target" />
+                <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+                <ScalarProperty Name="Orden" ColumnName="Orden" />
+                <ScalarProperty Name="Fibra" ColumnName="Fibra" />
+                <ScalarProperty Name="Eln" ColumnName="Eln" />
+                <ScalarProperty Name="Ceniza" ColumnName="Ceniza" />
+                <ScalarProperty Name="Humedad" ColumnName="Humedad" />
+                <ScalarProperty Name="Grasa" ColumnName="Grasa" />
+                <ScalarProperty Name="Proteina" ColumnName="Proteina" />
+                <ScalarProperty Name="Params_dist" ColumnName="Params_dist" />
+                <ScalarProperty Name="Video" ColumnName="Video" />
+                <ScalarProperty Name="Vademecum" ColumnName="Vademecum" />
+                <ScalarProperty Name="Brochure" ColumnName="Brochure" />
+                <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id_linea" ColumnName="Id_linea" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="lineas">
+            <EntityTypeMapping TypeName="maltaModel.lineas">
+              <MappingFragment StoreEntitySet="lineas">
+                <ScalarProperty Name="Orden" ColumnName="Orden" />
+                <ScalarProperty Name="Target" ColumnName="Target" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id_marca" ColumnName="Id_marca" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="maltaModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="detalles_salud">
+            <EntityTypeMapping TypeName="maltaModel.detalles_salud">
+              <MappingFragment StoreEntitySet="detalles_salud">
+                <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Id_salud" ColumnName="Id_salud" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="salud">
+            <EntityTypeMapping TypeName="maltaModel.salud">
+              <MappingFragment StoreEntitySet="salud">
+                <ScalarProperty Name="Params_dist" ColumnName="Params_dist" />
+                <ScalarProperty Name="Video" ColumnName="Video" />
+                <ScalarProperty Name="Vademecum" ColumnName="Vademecum" />
+                <ScalarProperty Name="Brochure" ColumnName="Brochure" />
+                <ScalarProperty Name="Uso" ColumnName="Uso" />
+                <ScalarProperty Name="Reacciones" ColumnName="Reacciones" />
+                <ScalarProperty Name="Interaccion" ColumnName="Interaccion" />
+                <ScalarProperty Name="Administracion" ColumnName="Administracion" />
+                <ScalarProperty Name="Contraindicaciones" ColumnName="Contraindicaciones" />
+                <ScalarProperty Name="Indicaciones" ColumnName="Indicaciones" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="blog">
+            <EntityTypeMapping TypeName="maltaModel.blog">
+              <MappingFragment StoreEntitySet="blog">
+                <ScalarProperty Name="Especies" ColumnName="Especies" />
+                <ScalarProperty Name="Autor" ColumnName="Autor" />
+                <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Etiquetas" ColumnName="Etiquetas" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Fuente" ColumnName="Fuente" />
+                <ScalarProperty Name="Subtitulo" ColumnName="Subtitulo" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="distribuidores">
+            <EntityTypeMapping TypeName="maltaModel.distribuidores">
+              <MappingFragment StoreEntitySet="distribuidores">
+                <ScalarProperty Name="Mapa" ColumnName="Mapa" />
+                <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+                <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+                <ScalarProperty Name="Horario" ColumnName="Horario" />
+                <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+                <ScalarProperty Name="Celular" ColumnName="Celular" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+                <ScalarProperty Name="C_P" ColumnName="C_P" />
+                <ScalarProperty Name="Barrio" ColumnName="Barrio" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Nombre_com" ColumnName="Nombre_com" />
+                <ScalarProperty Name="Nombre_fact" ColumnName="Nombre_fact" />
+                <ScalarProperty Name="Planta" ColumnName="Planta" />
+                <ScalarProperty Name="No_cte" ColumnName="No_cte" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

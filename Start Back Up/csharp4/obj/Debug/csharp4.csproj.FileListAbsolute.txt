@@ -1,0 +1,6 @@
+c:\users\esteban\documents\visual studio 2015\Projects\csharp4\bin\csharp4.dll.config
+c:\users\esteban\documents\visual studio 2015\Projects\csharp4\bin\csharp4.dll
+c:\users\esteban\documents\visual studio 2015\Projects\csharp4\bin\csharp4.pdb
+c:\users\esteban\documents\visual studio 2015\Projects\csharp4\obj\Debug\csharp4.csprojResolveAssemblyReference.cache
+c:\users\esteban\documents\visual studio 2015\Projects\csharp4\obj\Debug\csharp4.dll
+c:\users\esteban\documents\visual studio 2015\Projects\csharp4\obj\Debug\csharp4.pdb

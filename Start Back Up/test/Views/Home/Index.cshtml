@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Title = "Inicio";
+}
+<div id="hero">
+    <div class="expanded row large-collapse medium-collapse">
+        <div class="large-4 medium-4 columns">
+            <div id="intro-pecuario" class="home-especie">
+                <a href="/Productos/especie">Pecuarios</a>
+            </div>
+        </div>
+        <div class="large-4 medium-4 columns">
+            <div id="intro-mascotas" class="home-especie">
+                <a href="/Productos/especie">Mascotas</a>
+            </div>
+        </div>
+        <div class="large-4 medium-4 columns">
+            <div id="intro-acuacultura" class="home-especie">
+                <a href="/Productos/especie">Acuacultura</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="intro-malta">
+    <div class="row">
+        <div class="large-6 medium-6 large-offset-6 medium-offset-6 columns">
+            <p>En maltaCleyton® estamos comprometidos con la plena satisfacción de las necesidades de nuestros clientes y consumidores en el rubro de la nutrición y salud animal. </p>
+            <p>Por ello, contamos con un amplio portafolio de productos para animales de producción, especialidad y compañía a través del cual aseguramos el bienestar de los mismos y la entrega de un alto valor a nuestros clientes.  </p>
+        </div>
+    </div>
+</div>
+
+<div id="intro-expertos">
+    <div class="row">
+        <div class="large-1 medium-1 columns">
+            &nbsp;
+        </div>
+
+        <div class="large-10 medium-10 columns">
+
+            <div class="row">
+                <div class="large-10 columns">
+                    <div id="nav-expertos">
+                        <!-- <a href="#"><img src="~/Content/img/e-gatos.svg" alt=""></a> -->
+                        <!-- <a href="#"><img src="~/Content/img/e-perros.svg" alt=""></a> -->
+                        <a href="#"><img src="~/Content/img/e-ganado-carne.svg" alt=""></a>
+                        <a href="#"><img src="~/Content/img/e-ganado-lechero.svg" alt=""></a>
+                        <a href="#"><img src="~/Content/img/e-aves-postura.svg" alt=""></a>
+                        <a href="#"><img src="~/Content/img/e-cerdos.svg" alt=""></a>
+                        <a href="#"><img src="~/Content/img/e-pollo-engorda.svg" alt=""></a>
+                        <a href="#"><img src="~/Content/img/e-caballos.svg" alt=""></a>
+                        <a href="#"><img src="~/Content/img/e-gallos.svg" alt=""></a>
+                        <a href="#"><img src="~/Content/img/e-conejos.svg" alt=""></a>
+                        <a href="#"><img src="~/Content/img/e-borregos.svg" alt=""></a>
+                        <a href="#"><img src="~/Content/img/e-cabras.svg" alt=""></a>
+                        <a href="#"><img src="~/Content/img/e-pavos.svg" alt=""></a>
+                        <a href="#"><img src="~/Content/img/e-codornices.svg" alt=""></a>
+                        <a href="#"><img src="~/Content/img/e-camarones.svg" alt=""></a>
+                        <!-- <a href="#"><img src="~/Content/img/e-truchas.svg" alt=""></a> -->
+                        <!-- <a href="#"><img src="~/Content/img/e-tilapias.svg" alt=""></a> -->
+                        <!-- <a href="#"><img src="~/Content/img/e-bagres.svg" alt=""></a> -->
+                        <a href="#"><img src="~/Content/img/e-pavos.svg" alt=""></a>
+                        <!-- <a href="#"><img src="~/Content/img/e-salud.svg" alt=""></a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row large-collapse medium-collapse">
+
+                <div class="large-4 columns">
+                    <div id="foto-expertos">
+                        &nbsp;
+                    </div>
+                </div>
+
+                <div class="large-8 columns">
+                    <div id="info-expertos">
+                        <h4>Consulta a nuestros <strong>Expertos</strong></h4>
+                        <div class="pregunta">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur iusto ad laboriosam fugit asperiores ut!</p>
+                        </div>
+                        <div class="respuesta">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsum iure adipisci, voluptatem blanditiis sed similique ipsam facere aspernatur ea?</p>
+                        </div>
+                        <p><a href="#" class="button"> Conoce más sobre nuestros programas <i class="fa fa-angle-right"></i></a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="large-1 medium-1 columns">
+            &nbsp;
+        </div>
+    </div>
+</div>
+
+<div id="blog-home">
+    <div class="row">
+        <div class="large-10 columns">
+            <h2>Noticias</h2>
+        </div>
+        <div class="large-2 columns text-right">
+            <a href="#" style="text-transform:uppercase;">Ver todas <i class="fa fa-angle-right" style="font-size:.875rem;"></i></a>
+        </div>
+    </div>
+    <div id="nota-home">
+        <div class="row">
+            <div class="large-7 columns">
+                <a href="#">
+                    <div class="info-articulo">
+                        <h4>Advierten crisis entre los porcicultores del país por importación de carne a México.</h4>
+                        <p class="autor">Autor o fuente</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+    // SoftScroll
+    // smoothScroll.init();
+    $(function () {
+        var ROOT = '@Url.Content("~/")';
+        // Backstretch
+        $("#title").backstretch(["https://source.unsplash.com/category/nature/1600x900"], { duration: 3200, fade: 750 });
+        $("#intro-pecuario").backstretch([ROOT + "Content/img/bg-intro-pecuario.jpg"], { duration: 3200, fade: 750 });
+        $("#intro-mascotas").backstretch([ROOT + "Content/img/bg-intro-mascotas.jpg"], { duration: 3200, fade: 750 });
+        $("#intro-acuacultura").backstretch([ROOT + "Content/img/bg-intro-acuacultura.jpg"], { duration: 3200, fade: 750 });
+        $("#foto-expertos").backstretch([ROOT + "Content/img/foto-expertos-home.jpg"], { duration: 3200, fade: 750 });
+
+
+        // Parallax
+        $('#intro-malta').parallax({ imageSrc: ROOT + 'Content/img/bg-inicio-malta.jpg' });
+        $('#nota-home').parallax({ imageSrc: ROOT + 'Content/img/foto-granja.jpg' });
+        $('#header-cerdo').parallax({ imageSrc: ROOT + 'Content/img/bg-cerdo.jpg' });
+    });
+
+</script>

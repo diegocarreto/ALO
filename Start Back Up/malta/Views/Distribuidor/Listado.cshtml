@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Distribuidores";
+}
+
+<section id="template-header">
+    <div class="row">
+        <div class="large-10 medium-10 columns">
+            <div class="frase">
+                <h2>Distribuidores</h2>
+            </div>
+        </div>
+        <!--
+                <div class="large-4 medium-4 columns">
+                    <img src="img/imago-malta.svg" alt="">
+                </div>
+        -->
+    </div>
+</section>
+<section id="distribuidores">
+    <div class="articulo">
+        <div class="row small-up-2 medium-up-2 large-up-2">
+            @model IEnumerable<malta.Models.distribuidores>
+            @foreach (var item in (List<malta.Models.distribuidores>)ViewBag.lst_dist)
+            {
+                string lat = (@Html.DisplayFor(modelItem => item.Latitud))+"";
+                string lon = (@Html.DisplayFor(modelItem => item.Longitud)) + "";
+
+                <div class='column'>
+                    <hr />
+                    <h4>@Html.DisplayFor(modelItem => item.Nombre_com)  </h4>
+                    <p class='direccion'>@Html.DisplayFor(modelItem => item.Nombre_fact)    </p>
+                    <p class='direccion'>
+                        @Html.DisplayFor(modelItem => item.Direccion)
+                        @Html.DisplayFor(modelItem => item.Barrio)  ,C.P.
+                        @Html.DisplayFor(modelItem => item.C_P),
+                        @Html.DisplayFor(modelItem => item.Estado),
+                        Tel: @Html.DisplayFor(modelItem => item.Telefono)
+                        Cel:  @Html.DisplayFor(modelItem => item.Celular)
+                    </p>
+                    <p class='correo'><a href=''> @Html.DisplayFor(modelItem => item.Mail)</a></p>
+                    <p class='direccion'> @Html.DisplayFor(modelItem => item.Horario)   </p>
+                    @if (lat.Equals(""))
+                    {
+                        <p>La ubicación en el mapa no fue registrada</p>
+                    }else
+                    {
+                        string url = "http://maps.google.com/maps?q=loc:"+lat+","+lon;
+                        <a target="_blank" href="@url">Abrir mapa</a>
+                    }
+                </div>
+                
+
+            }
+        </div>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        var ROOT = '@Url.Content("~/Content/")';
+        $('#template-header').parallax({ imageSrc: ROOT + 'img/bg-templete.jpg' });
+    });
+</script>

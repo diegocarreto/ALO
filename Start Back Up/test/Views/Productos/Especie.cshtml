@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "Especies";
+}
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section id="header-cerdo" class="title">
+    <div class="row">
+        <div class="large-8 medium-8 columns">
+            <div class="frase">
+                <p class="lead">Materias primas de alta calidad, seleccionadas para un alto desempeño en cada etapa.</p>
+                <p>para cada necesidad… un producto</p>
+            </div>
+        </div>
+        <div class="large-4 medium-4 columns">
+            <img src="~/Content/img/header-cerdo.png" alt="">
+        </div>
+    </div>
+</section>
+
+<div id="nav-especie">
+    <ul>
+        <li><a href="#" class="active">Productos</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Artículos de interés</a></li>
+        <li><a href="#">Calculadora Nutricional</a></li>
+        <li><a href="#">Planes de alimentación</a></li>
+    </ul>
+</div>
+@model IEnumerable<malta.Models.marcas>
+
+@foreach (var item in (List<malta.Models.marcas>)ViewBag.Lst_marcas)
+{
+    <section class="linea-productos">
+        <div class="premium-cerdo">
+            <div class="row">
+                <div class="large-3 medium-3 columns">
+                    <img src="@Url.Content("~/")@Html.DisplayFor(modelItem => item.Imagen)" alt="">
+                </div>
+                <div class="large-9 medium-9 columns">
+                    <div class="descripcion-linea">
+                        <h3>@Html.DisplayFor(modelItem => item.Nombre)</h3>
+                        <p>@Html.DisplayFor(modelItem => item.Descripcion)</p>
+
+                    </div>
+                    <p><a href="/Productos/Productos?id_linea=@Html.DisplayFor(modelItem => item.Id)">Ver Productos</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+
+
+<!--
+<section class="linea-productos">
+    <div class="api-aba">
+        <div class="row">
+            <div class="large-3 medium-3 columns">
+                <img src="~/Content/img/l-cerdo-api-aba.png" alt="">
+            </div>
+            <div class="large-9 medium-9 columns">
+                <div class="descripcion-linea">
+                    <h3>Api-Aba</h3>
+                    <p>Diseñada para cubrir los requerimientos nutricionales de las especies productivas en ciclos de producción prolongados de baja escala con productos de calidad.</p>
+                </div>
+                <p><a href="/Productos/Productos">Ver Productos</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="linea-productos">
+    <div class="malta">
+        <div class="row">
+            <div class="large-3 medium-3 columns">
+                <img src="~/Content/img/l-cerdo-malta.png" alt="">
+            </div>
+            <div class="large-9 medium-9 columns">
+                <div class="descripcion-linea">
+                    <h3>Malta</h3>
+                    <p>Desarrollada específicamente con el objetivo de mejorar la rentabilidad de tu negocio, garantiza el óptimo desempeño de la producción con programas de alimentación que promueven el máximo aprovechamiento del potencial genético de cada especie.</p>
+                </div>
+                <p><a href="/Productos/Productos">Ver Productos</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="linea-productos">
+    <div class="linea-salud">
+        <div class="row">
+            <div class="large-3 medium-3 columns">
+                <img src="~/Content/img/l-salud.svg" alt="">
+            </div>
+            <div class="large-9 medium-9 columns">
+                <div class="descripcion-linea">
+                    <h3>Prevención y Salud</h3>
+                    <p>La salud y nutrición son la base del estado de bienestar de los animales, es por ello que maltaCleyton® ofrece un portafolio con los mejores productos tanto para la alimentación como para la salud animal.</p>
+                </div>
+                <p><a href="/Productos/Productos">Ver Productos</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+    -->

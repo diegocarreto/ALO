@@ -1,0 +1,79 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Distribuidores";
+}
+<style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+        height: 510px;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+    }
+</style>
+<section id="nosotros-header">
+    <div class="row">
+
+        <br /><br /><br /><br /><br />
+
+        <button class="button btn_marker" onclick="marker();">a</button>
+        <button class="button btn_marker">b</button>
+        <button class="button btn_marker">c</button>
+        <div id="map"></div>
+
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: -34.397, lng: 150.644 },
+            zoom: 16
+        });
+        var infoWindow = new google.maps.InfoWindow({ map: map });
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+
+
+                map.setCenter(pos);
+            }, function () {
+                handleLocationError(true, infoWindow, map.getCenter());
+            });
+        } else {
+            // Browser doesn't support Geolocation
+            handleLocationError(false, infoWindow, map.getCenter());
+        }
+    }
+
+    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+    }
+
+
+    function marker() {
+        console.log('click');
+        var myLatLng = { lat: 24.036248, lng: -104.653747 };
+        map.setCenter(myLatLng);
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQPzkrqOg0VpYjPp_d07rE7sAveUXcSXA&callback=initMap">
+</script>
+

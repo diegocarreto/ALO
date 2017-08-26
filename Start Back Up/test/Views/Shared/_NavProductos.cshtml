@@ -1,0 +1,45 @@
+﻿<div id="nav-productos">
+    <a data-especie="mascotas" class="switchNav" onclick="openNav()"><img src="~/Content/img/e-perros.svg" alt=""><span class="text-link"> Perros</span></a>
+    <a data-especie="pecuarios" class="switchNav" onclick="openNav1()"><img src="~/Content/img/e-ganado-lechero.svg" alt=""><span class="text-link"> Ganado Lechero</span></a>
+    <a data-especie="aves" class="switchNav" onclick="openNav2()"><img src="~/Content/img/e-pollo-engorda.svg" alt=""><span class="text-link"> Pollo Engorda</span></a>
+    <a data-especie="acuacultura" class="switchNav" onclick="openNav3()"><img src="~/Content/img/e-tilapias.svg" alt=""><span class="text-link"> Tilapias</span></a>
+    <a href="/Productos/especie"><img src="~/Content/img/e-salud.svg" alt=""><span class="text-link"> Prevención y Salud</span></a>
+</div>
+@model IEnumerable<malta.Models.especies>
+<div id="nav-mascotas" class="nav-especie">
+    <h2>Mascotas</h2>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    @foreach (var item in (List<malta.Models.especies>)ViewBag.Mascotas)
+    {           
+        <a href="/Productos/especie?id_especie=@Html.DisplayFor(modelItem => item.Id)"><img src="@Url.Content("~/")@Html.DisplayFor(modelItem => item.Icono)" alt=""><span class="text-link"> @Html.DisplayFor(modelItem => item.Nombre)</span></a>
+    }
+</div>
+
+<div id="nav-pecuario" class="nav-especie">
+    <h2>Pecuario</h2>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+    @foreach (var item in (List<malta.Models.especies>)ViewBag.Pecuario)
+    {
+        <a href="/Productos/especie?id_especie=@Html.DisplayFor(modelItem => item.Id)"><img src="@Url.Content("~/")@Html.DisplayFor(modelItem => item.Icono)" alt=""><span class="text-link"> @Html.DisplayFor(modelItem => item.Nombre)</span></a>
+    }
+</div>
+<!--
+<div id="nav-aves" class="nav-especie">
+    <h2>Aves</h2>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+    <a href="/Productos/especie"><img src="~/Content/img/e-aves-postura.svg" alt=""><span class="text-link"> Aves Postura</span></a>
+    <a href="/Productos/especie"><img src="~/Content/img/e-pollo-engorda.svg" alt=""><span class="text-link"> Pollo Engorda</span></a>
+    <a href="/Productos/especie"><img src="~/Content/img/e-pavos.svg" alt=""><span class="text-link"> Pavos</span></a>
+    <a href="/Productos/especie"><img src="~/Content/img/e-codornices.svg" alt=""><span class="text-link"> Codornices</span></a>
+</div>
+
+<div id="nav-acuacultura" class="nav-especie">
+    <h2>Acuacultura</h2>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+    <a href="/Productos/especie"><img src="~/Content/img/e-camarones.svg" alt=""><span class="text-link"> Camarones</span></a>
+    <a href="/Productos/especie"><img src="~/Content/img/e-truchas.svg" alt=""><span class="text-link"> Truchas</span></a>
+    <a href="/Productos/especie"><img src="~/Content/img/e-tilapias.svg" alt=""><span class="text-link"> Tilapias</span></a>
+    <a href="/Productos/especie"><img src="~/Content/img/e-bagres.svg" alt=""><span class="text-link"> Bagres</span></a>
+</div>
+-->

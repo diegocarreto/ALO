@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3f782f2f7152429094f1c3c297dcf516" Name="Diagram1">
+        <EntityTypeShape EntityType="maltaModel.detalles_producto" Width="1.5" PointX="10.625" PointY="1.625" />
+        <EntityTypeShape EntityType="maltaModel.especies" Width="1.5" PointX="1" PointY="1" />
+        <EntityTypeShape EntityType="maltaModel.marcas" Width="1.5" PointX="3.375" PointY="1.5" />
+        <EntityTypeShape EntityType="maltaModel.productos" Width="1.5" PointX="8" PointY="1" />
+        <AssociationConnector Association="maltaModel.FK_detalles_producto_productos" />
+        <AssociationConnector Association="maltaModel.FK_productos_productos" />
+        <AssociationConnector Association="maltaModel.FK_marcas_especies" />
+        <EntityTypeShape EntityType="maltaModel.lineas" Width="1.5" PointX="5.625" PointY="1.75" />
+        <AssociationConnector Association="maltaModel.FK_lineas_marcas" />
+        <AssociationConnector Association="maltaModel.FK_productos_lineas" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

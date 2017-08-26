@@ -1,0 +1,131 @@
+﻿@{
+    ViewBag.Title = "Ficha";
+}
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section id="header-cerdo" class="title">
+    <div class="row">
+        <div class="large-3 medium-3 columns">
+            <img src="~/Content/img/cerdo/youpig.png" alt="">
+        </div>
+        <div class="large-6 medium-6 columns">
+            <div class="breadcrumbs">
+                <a href="/Productos/especie">Cerdos</a>   /   <a href="/Productos/productos">Super Premium</a>   /   <strong>YouPig Baby</strong>
+            </div>
+            <h3>YouPig! Baby</h3>
+            <p>Desarrollada específicamente con el objetivo de mejorar la rentabilidad de tu negocio, garantiza el óptimo desempeño de la producción con programas de alimentación que promueven el máximo aprovechamiento del potencial genético de cada especie.</p>
+        </div>
+        <div class="large-3 medium-3 columns">
+            <h5>Compartir</h5>
+            <ul>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> Email</a></li>
+                <li><a href="#"><i class="fa fa-file-text-o"></i> Brochure</a></li>
+                <li><a href="#"><i class="fa fa-book"></i> Vademécum</a></li>
+                <li><a href="#"><i class="fa fa-youtube-play"></i> Videos Relacionados</a></li>
+                <li><a href="#"><i class="fa fa-map-marker"></i>  Encontrar distribuidor</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="analisis-garantizado">
+    <div class="row">
+        <div class="large-12 columns">
+            <h4>Análisis Garantizado</h4>
+        </div>
+    </div>
+    <div class="row small-up-2 medium-up-3 large-up-5">
+        <div class="column">
+            <img src="~/Content/img/i-proteina.svg" alt="">
+            <h4>Proteína</h4>
+            <div class="proteina circle"><strong>16.5%</strong></div>
+        </div>
+        <div class="column">
+            <img src="~/Content/img/i-grasa.svg" alt="">
+            <h4>Grasa</h4>
+            <div class="grasa circle"><strong>3.5%</strong></div>
+        </div>
+        <div class="column">
+            <img src="~/Content/img/i-humedad.svg" alt="">
+            <h4>Humedad</h4>
+            <div class="humedad circle"><strong>12%</strong></div>
+        </div><div class="column">
+            <img src="~/Content/img/i-ceniza.svg" alt="">
+            <h4>Ceniza</h4>
+            <div class="ceniza circle"><strong>5%</strong></div>
+        </div>
+        <div class="column">
+            <img src="~/Content/img/i-eln.svg" alt="">
+            <h4>ELN</h4>
+            <div class="eln circle"><strong>59.5%</strong></div>
+        </div>
+    </div>
+</section>
+
+<section id="ficha-beneficios">
+    <div class="row">
+        <div class="large-6 medium-6 columns">
+            <h4>Beneficios</h4>
+            <ul>
+                <li>Alimento altamente palatable sabor lácteo - frutos rojos.</li>
+                <li>Estimula el consumo del Pellet.</li>
+                <li>Mejora la inmunidad y salud intestinal.</li>
+                <li>Proporciona los nutrientes específicos para su desarrollo.</li>
+                <li>Más energía y más nutrimentos destinados a producción.</li>
+                <li>Salvaguarda la inversión</li>
+            </ul>
+        </div>
+        <div class="large-6 medium-6 columns">
+            <h4>Medicamentos disponibles</h4>
+            <ul>
+                <li>Ractopamina</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="ficha-presentaciones">
+    <div class="row">
+        <div class="large-6 medium-6 columns">
+            <h4>Presentaciones</h4>
+            <div class="row text-center small-up-2 medium-up-3 large-up-3">
+                <div class="column">
+                    <img src="~/Content/img/cerdo/youpig.png" alt="">
+                    <p>xx Kg.</p>
+                </div>
+                <div class="column">
+                    <img src="~/Content/img/cerdo/youpig.png" alt="">
+                    <p>xx Kg.</p>
+                </div>
+            </div>
+        </div>
+        <div class="large-6 medium-6 columns">
+            <h4>Calculadora Nutricional</h4>
+        </div>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+    // SoftScroll
+    // smoothScroll.init();
+    $(function () {
+        var ROOT = '@Url.Content("~/")';
+        // Backstretch
+        $("#title").backstretch(["https://source.unsplash.com/category/nature/1600x900"], { duration: 3200, fade: 750 });
+        $("#intro-pecuario").backstretch([ROOT + "Content/img/bg-intro-pecuario.jpg"], { duration: 3200, fade: 750 });
+        $("#intro-mascotas").backstretch([ROOT + "Content/img/bg-intro-mascotas.jpg"], { duration: 3200, fade: 750 });
+        $("#intro-acuacultura").backstretch([ROOT + "Content/img/bg-intro-acuacultura.jpg"], { duration: 3200, fade: 750 });
+        $("#foto-expertos").backstretch([ROOT + "Content/img/foto-expertos-home.jpg"], { duration: 3200, fade: 750 });
+
+
+        // Parallax
+        $('#intro-malta').parallax({ imageSrc: ROOT + 'Content/img/bg-inicio-malta.jpg' });
+        $('#nota-home').parallax({ imageSrc: ROOT + 'Content/img/foto-granja.jpg' });
+        $('#header-cerdo').parallax({ imageSrc: ROOT + 'Content/img/bg-cerdo.jpg' });
+    });
+
+</script>
