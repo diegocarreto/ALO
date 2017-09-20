@@ -1,0 +1,95 @@
+body {
+    background: url('../bg-inicio-malta.jpg') center fixed no-repeat;
+    background-color: #c8a972;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    zoom: 1;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.login {
+    width: 600px;
+    height: 340px;
+}
+
+.cot {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8) !important;
+    position: fixed;
+}
+
+.send {
+    width: 600px;
+    height: 490px;
+}
+
+.box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica;
+    color: #fff;
+    padding: 30px 0px;
+}
+
+    .box h1 {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 30px;
+    }
+
+    .box input, textarea {
+        display: block;
+        width: 300px;
+        margin: 20px auto;
+        padding: 15px;
+        background: rgba(0,0,0,0.2);
+        color: #fff;
+        border: 0;
+    }
+
+        .box input:focus, .box input:active, .box button:focus, .box button:active {
+            outline: none;
+        }
+
+        .box input[type=button] {
+            background: #009bff;
+            border: 0;
+            color: #fff;
+            padding: 10px;
+            font-size: 20px;
+            width: 330px;
+            margin: 20px auto;
+            display: block;
+            cursor: pointer;
+        }
+
+            .box input[type=button]:active {
+                background: #27ae60;
+            }
+
+    .box p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+        .box p span {
+            cursor: pointer;
+            color: #666;
+        }
+
+textarea {
+    overflow: hidden;
+}

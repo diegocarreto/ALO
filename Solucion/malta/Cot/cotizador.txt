@@ -1,0 +1,4 @@
+distrubuidor
+producto
+tipo  --- saco o tonelada
+cantidad

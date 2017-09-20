@@ -6,7 +6,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\acer\Desktop\gggg</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\acer\Desktop\publicar alo</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Antlr3.Runtime.dll">
@@ -76,7 +76,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>01/28/2015 04:04:36</publishTime>
     </File>
     <File Include="bin/malta.dll">
-      <publishTime>08/20/2017 22:29:17</publishTime>
+      <publishTime>08/30/2017 08:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
       <publishTime>04/03/2015 17:07:22</publishTime>
@@ -199,7 +199,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/19/2017 11:28:32</publishTime>
     </File>
     <File Include="Content/css/malta.css">
-      <publishTime>08/16/2017 08:20:22</publishTime>
+      <publishTime>08/25/2017 07:46:06</publishTime>
     </File>
     <File Include="Content/img/bg-templete.jpg">
       <publishTime>08/09/2017 08:35:04</publishTime>
@@ -483,6 +483,306 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="Content/js/what-input.min.js">
       <publishTime>05/02/2017 17:35:24</publishTime>
     </File>
+    <File Include="Cot/bg-inicio-malta.jpg">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Cot/cot.html">
+      <publishTime>08/30/2017 06:01:37</publishTime>
+    </File>
+    <File Include="Cot/cotizador.txt">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Cot/css/button.css">
+      <publishTime>08/29/2017 23:55:56</publishTime>
+    </File>
+    <File Include="Cot/css/form.css">
+      <publishTime>08/30/2017 00:56:04</publishTime>
+    </File>
+    <File Include="Cot/css/loader.css">
+      <publishTime>08/29/2017 23:24:38</publishTime>
+    </File>
+    <File Include="Cot/css/modal.css">
+      <publishTime>08/30/2017 00:49:05</publishTime>
+    </File>
+    <File Include="Cot/css/style.css">
+      <publishTime>08/29/2017 22:57:22</publishTime>
+    </File>
+    <File Include="Cot/css/styles.css">
+      <publishTime>08/30/2017 00:46:16</publishTime>
+    </File>
+    <File Include="Cot/css/table.css">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Cot/Formato pedidos plantas enviado a agencia 22ago17.xlsx">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Cot/img/add-icon.png">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Cot/img/delete-icon.png">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Cot/img/Edit-icon.png">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Cot/js/cot.js">
+      <publishTime>08/30/2017 06:03:41</publishTime>
+    </File>
+    <File Include="Cot/js/libs/base.js">
+      <publishTime>08/29/2017 21:51:39</publishTime>
+    </File>
+    <File Include="Cot/js/libs/base.min.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/close.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/closeX.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/controlbar-black-border.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/controlbar-text-buttons.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/controlbar-white-small.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/controlbar-white.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/controlbar2.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/controlbar3.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/controlbar4-hover.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/controlbar4.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/fullexpand.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/geckodimmer.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/icon.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/loader.big.black.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/loader.big.white.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/loader.black.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/loader.white.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/outlines/beveled.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/outlines/custom.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/outlines/drop-shadow.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/outlines/glossy-dark.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/outlines/outer-glow.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/outlines/rounded-black.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/outlines/rounded-white.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/resize.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/scrollarrows.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/zoom.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/zoomin.cur">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/graphics/zoomout.cur">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/highslide-full.packed.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/highslide-ie6.css">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/highslide.config.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/highslide.css">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/Highslide/highslide.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/html5.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jquery-1.7.2.min.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jquery.browser.min.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/images/ui-icons_222222_256x240.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/images/ui-icons_454545_256x240.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/images/ui-icons_888888_256x240.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/jquery-ui-1.8.17.custom.css">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/jquery-ui-1.8.17.custom.min.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/jquery-ui.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/jquery.datepicker.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/jquery.ui.core.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/jquery.ui.draggable.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/jquery.ui.mouse.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/jQueryUI/jquery.ui.widget.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/modernizr-2.6.1.min.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/libs/oldbrowser.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/lists/listadoArchivos.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/lists/listadoCapturaHoras.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/lists/listadoCheques.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/lists/listadoClientes.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/lists/listadoEmpresas.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/lists/listadoGastos.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/lists/listadoHerramientas.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/lists/listadoNomina.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/lists/listadoPrestamos.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/lists/listadoTareas.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/lists/listadoTrabajador.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/lists/login.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/login.js">
+      <publishTime>08/29/2017 23:23:33</publishTime>
+    </File>
+    <File Include="Cot/js/scripts.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Cot/js/send.js">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Cot/js/utilities.js">
+      <publishTime>08/30/2017 05:52:41</publishTime>
+    </File>
+    <File Include="Cot/Listas de Precios envíe Agencia 22ago17.xlsx">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Cot/login.html">
+      <publishTime>08/29/2017 23:57:38</publishTime>
+    </File>
+    <File Include="Cot/neovia.png">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Cot/Nosotros_pri meros cambios.cshtml.txt">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Cot/send.html">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Cot/tabla.html">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Cot/Web.config">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
     <File Include="favicon.ico">
       <publishTime>03/07/2017 09:36:46</publishTime>
     </File>
@@ -658,7 +958,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>04/27/2017 09:48:56</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/20/2017 22:29:17</publishTime>
+      <publishTime>08/30/2017 08:14:59</publishTime>
     </File>
   </ItemGroup>
 </Project>
