@@ -192,10 +192,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Quotation\ApiToken.cs" />
     <Compile Include="Models\blog.cs">
       <DependentUpon>MaltaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\BlogShort.cs" />
+    <Compile Include="Models\Quotation\Product.cs" />
+    <Compile Include="Models\Quotation\RequestList.cs" />
+    <Compile Include="Models\Quotation\Token.cs" />
+    <Compile Include="Models\Quotation\Utils\Extensions.cs" />
     <Compile Include="Models\detalles_producto.cs">
       <DependentUpon>MaltaModel.tt</DependentUpon>
     </Compile>

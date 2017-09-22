@@ -1,7 +1,7 @@
 var Asc = true;
-    $col = null;
-    Total = 0,
-    GeneralCompanyLoaded = false;
+$col = null;
+Total = 0,
+GeneralCompanyLoaded = false;
 
 function EnvironmentBase(DefaultUrl) {
 
@@ -78,15 +78,6 @@ $(document).ready(function () {
         e.preventDefault();
 
         ViewEdit();
-    });
-
-    $(".gridView").on("click", ".polizaEdit", function (e) {
-
-        e.preventDefault();
-
-        var id = GetId($(this));
-
-        ViewEdit(id);
     });
 
     $("#preLoading").hide();
@@ -709,8 +700,7 @@ function getCellValue(row, index) {
     return $(row).children('td').eq(index).html()
 }
 
-function FormatDate(Date)
-{
+function FormatDate(Date) {
     var date = Date.replace("T00:00:00", "");
 
     var dateSplit = date.split("-");
