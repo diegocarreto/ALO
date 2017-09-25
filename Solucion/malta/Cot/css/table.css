@@ -19,6 +19,13 @@
     height: 22px !important;
 }
 
+.body {
+    background-color: #fff;
+    height: 420px;
+    overflow-y: auto;
+}
+
+
 img {
     height: 35px;
     width: 30px;
@@ -38,8 +45,7 @@ img {
     overflow: hidden;
     width: 1024px;
     height: 500px;
-    overflow-y: auto;
-    background-color: #fff !important;
+    background-color: #327a81 !important;
 }
 
 table {
@@ -84,3 +90,10 @@ table {
     width: 200px !important;
     display: inline !important;
 }
+
+#priceTotalContainer {
+    margin: 15px 240px 0 0;
+    float: right;
+}
+
+

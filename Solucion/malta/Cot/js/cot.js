@@ -18,10 +18,11 @@
                                                      product.IdProduct + "</td><td>" +
                                                      product.Name + "</td><td>" +
                                                      product.Kg + "</td><td>" +
+                                                     product.Min + "</td><td>" +
                                                      FMoney(product.Price) + "</td><td>" +
-                                                     "<input data-id='" + product.IdProduct + "' data-kg='" + product.Kg + "' data-price='" + product.Price + "' class='inputT amountInput' type='text' value='0' placeholder='Cantidad' required /></td>" +
+                                                     "<input data-id='" + product.IdProduct + "' data-kg='" + product.Kg + "' data-price='" + product.Price + "' maxlength='5' class='inputT amountInput' type='text' value='0' placeholder='Cantidad' required /></td>" +
                                                      "<td class='Kg'><span id='Kg_" + product.IdProduct + "'>0</span>" + "</td>" +
-                                                     "<td class='price'><span id='Price_" + product.IdProduct + "'>0</span>" + "</td></td>" +
+                                                     "<td class='price'><span id='Price_" + product.IdProduct + "'>$0.00</span>" + "</td></td>" +
                                          "</tr>");
 
                       }
@@ -48,9 +49,9 @@
     $(".table-users").on("keyup", ".amountInput", function (e) {
 
         var id = $(this).data("id")
-            kg = $(this).data("kg"),
-            price = $(this).data("price"),
-            amount = $(this).val();
+        kg = $(this).data("kg"),
+        price = $(this).data("price"),
+        amount = $(this).val();
 
         var totalKg = kg * amount,
             priceTotal = price * amount;
@@ -59,7 +60,7 @@
         $("#Price_" + id).text(FMoney(priceTotal));
 
         var price = 0;
-       
+
         $(".price").each(function () {
 
             var value = $(this).text().replace("$", "").replace(",", "");
