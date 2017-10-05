@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<style>
+
+	.modal {
+		display: none; 
+		position: fixed; 
+		z-index: 1; 
+		padding-top: 100px; 
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%; 
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.6); 
+	}
+
+	.modal-content {
+		margin: auto;
+		display: block;
+	}
+
+	#caption {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 700px;
+		text-align: center;
+		color: #ccc;
+		padding: 10px 0;
+		height: 150px;
+	}
+
+	.modal-content, #caption { 
+		-webkit-animation-name: zoom;
+		-webkit-animation-duration: 0.6s;
+		animation-name: zoom;
+		animation-duration: 0.6s;
+	}
+
+	@-webkit-keyframes zoom {
+		from {-webkit-transform:scale(0)} 
+		to {-webkit-transform:scale(1)}
+	}
+
+	@keyframes zoom {
+		from {transform:scale(0)} 
+		to {transform:scale(1)}
+	}
+
+	.close {
+		position: absolute;
+		top: 15px;
+		right: 35px;
+		color: #f1f1f1;
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	@media only screen and (max-width: 700px){
+		.modal-content {
+			width: 100%;
+		}
+	}
+
+</style>
+
+
+</head>
+<body>
+
+	<div id="myModal" class="modal">
+	  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+	  <img class="modal-content" id="img01"  height="800" width="1227">
+	  <div id="caption"></div>
+	</div>
+
+	<script>
+
+		var modal = document.getElementById('myModal'),
+			modalImg = document.getElementById("img01"),
+			captionText = document.getElementById("caption");
+
+			modal.style.display = "block";
+			modalImg.src = "https://www.maltacleyton.com.mx/Content/img/solidaridad.jpg";
+			captionText.innerHTML = "";
+
+		var span = document.getElementsByClassName("close")[0];
+
+		span.onclick = function() { 
+		  modal.style.display = "none";
+		}
+
+	</script>
+
+</body>
+</html>

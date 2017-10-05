@@ -192,15 +192,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Quotation\ApiToken.cs" />
     <Compile Include="Models\blog.cs">
       <DependentUpon>MaltaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\BlogShort.cs" />
-    <Compile Include="Models\Quotation\Product.cs" />
-    <Compile Include="Models\Quotation\RequestList.cs" />
-    <Compile Include="Models\Quotation\Token.cs" />
-    <Compile Include="Models\Quotation\Utils\Extensions.cs" />
     <Compile Include="Models\detalles_producto.cs">
       <DependentUpon>MaltaModel.tt</DependentUpon>
     </Compile>
@@ -258,6 +253,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\template\email.html" />
     <Content Include="Cot\bg-inicio-malta.jpg" />
     <Content Include="Cot\cot.html" />
     <Content Include="Cot\cotizador.txt" />
@@ -476,6 +472,7 @@
     <Content Include="Cot\Formato pedidos plantas enviado a agencia 22ago17.xlsx" />
     <Content Include="Cot\Listas de Precios envíe Agencia 22ago17.xlsx" />
     <Content Include="Cot\Web.config" />
+    <Content Include="Content\template\Cotizaciones.xlsx" />
     <None Include="Cot\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -567,6 +564,16 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{343b3aa0-6c0c-41d5-84d6-d9a92f5336e9}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{db88f36a-8817-4c7b-a692-90293476cc83}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

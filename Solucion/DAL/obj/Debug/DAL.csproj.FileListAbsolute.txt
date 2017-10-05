@@ -1,0 +1,7 @@
+C:\Users\acer\Documents\Nuevos proyectos\ALO\Solucion\DAL\bin\Debug\DAL.dll
+C:\Users\acer\Documents\Nuevos proyectos\ALO\Solucion\DAL\bin\Debug\DAL.pdb
+C:\Users\acer\Documents\Nuevos proyectos\ALO\Solucion\DAL\bin\Debug\DTO.dll
+C:\Users\acer\Documents\Nuevos proyectos\ALO\Solucion\DAL\bin\Debug\DTO.pdb
+C:\Users\acer\Documents\Nuevos proyectos\ALO\Solucion\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\acer\Documents\Nuevos proyectos\ALO\Solucion\DAL\obj\Debug\DAL.dll
+C:\Users\acer\Documents\Nuevos proyectos\ALO\Solucion\DAL\obj\Debug\DAL.pdb

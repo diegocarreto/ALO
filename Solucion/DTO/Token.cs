@@ -1,10 +1,5 @@
-﻿namespace malta.Models.Quotation
+﻿namespace DTO
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Web;
-
     public class Token
     {
         public int IdUser { get; set; }

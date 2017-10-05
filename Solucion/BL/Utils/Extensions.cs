@@ -1,12 +1,42 @@
-﻿using System;
-using System.Security.Cryptography;
-using System.Text;
-using System.Web;
-namespace malta.Models.Quotation.Utils
+﻿namespace BL.Utils
 {
+    using System;
+    using System.Configuration;
+    using System.Security.Cryptography;
+    using System.Text;
+    using System.Web;
+
     public static class Extensions
     {
         #region Methods
+
+        /// <summary>
+        /// Obtiene el valor del AppSetting indicado de la aplicacion actual.
+        /// </summary>
+        /// <param name="pg">Objeto.</param>
+        /// <param name="SettingName">Nombre del AppSetting.</param>
+        /// <returns></returns>
+        public static T AppSet<T>(this Object obj, String SettingName)
+        {
+            if (ConfigurationManager.AppSettings[SettingName] != null)
+                return (T)Convert.ChangeType(ConfigurationManager.AppSettings[SettingName], typeof(T));
+            else
+                return default(T);
+        }
+
+        /// <summary>
+        /// Obtiene el valor del AppSetting indicado de la aplicacion actual.
+        /// </summary>
+        /// <param name="pg">Objeto.</param>
+        /// <param name="SettingName">Nombre del AppSetting.</param>
+        /// <returns></returns>
+        public static string AppSet(this Object obj, String SettingName)
+        {
+            if (ConfigurationManager.AppSettings[SettingName] != null)
+                return ConfigurationManager.AppSettings[SettingName].ToString();
+            else
+                return string.Empty;
+        }
 
         /// <summary>
         /// Obtiene la ip del cliente.
@@ -136,7 +166,6 @@ namespace malta.Models.Quotation.Utils
                     0, ArrayResultado.Length);
 
         }
-
 
         /// <summary>
         /// Desencripta una cadena.

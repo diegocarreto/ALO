@@ -1,6 +1,7 @@
-﻿using System;
-namespace malta.Models.Quotation
+﻿namespace DTO
 {
+    using System;
+
     [Serializable]
     public class RequestList
     {

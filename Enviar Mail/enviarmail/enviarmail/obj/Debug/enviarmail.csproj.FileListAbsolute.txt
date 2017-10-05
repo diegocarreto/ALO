@@ -4,3 +4,9 @@ C:\Users\acer\Desktop\Enviar Mail\enviarmail\enviarmail\bin\Debug\enviarmail.pdb
 C:\Users\acer\Desktop\Enviar Mail\enviarmail\enviarmail\obj\Debug\enviarmail.csprojResolveAssemblyReference.cache
 C:\Users\acer\Desktop\Enviar Mail\enviarmail\enviarmail\obj\Debug\enviarmail.exe
 C:\Users\acer\Desktop\Enviar Mail\enviarmail\enviarmail\obj\Debug\enviarmail.pdb
+C:\Users\acer\Documents\Nuevos proyectos\ALO\Enviar Mail\enviarmail\enviarmail\bin\Debug\enviarmail.exe.config
+C:\Users\acer\Documents\Nuevos proyectos\ALO\Enviar Mail\enviarmail\enviarmail\bin\Debug\enviarmail.exe
+C:\Users\acer\Documents\Nuevos proyectos\ALO\Enviar Mail\enviarmail\enviarmail\bin\Debug\enviarmail.pdb
+C:\Users\acer\Documents\Nuevos proyectos\ALO\Enviar Mail\enviarmail\enviarmail\obj\Debug\enviarmail.csprojResolveAssemblyReference.cache
+C:\Users\acer\Documents\Nuevos proyectos\ALO\Enviar Mail\enviarmail\enviarmail\obj\Debug\enviarmail.exe
+C:\Users\acer\Documents\Nuevos proyectos\ALO\Enviar Mail\enviarmail\enviarmail\obj\Debug\enviarmail.pdb

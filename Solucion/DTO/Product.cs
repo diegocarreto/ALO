@@ -1,10 +1,5 @@
-﻿namespace malta.Models.Quotation
+﻿namespace DTO
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Web;
-
     public class Product
     {
         public int IdPlant { get; set; }
@@ -24,5 +19,11 @@
         public float Discount { get; set; }
 
         public float Kg { get; set; }
+
+        public float Quantity { get; set; }
+
+        public float TotalKg { get; set; }
+
+        public float Total { get; set; }
     }
 }
