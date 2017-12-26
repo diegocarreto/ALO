@@ -42,7 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CotDal.cs" />
+    <Compile Include="BaseDal.cs" />
+    <Compile Include="QuotationDal.cs" />
+    <Compile Include="AccountDal.cs" />
+    <Compile Include="LogDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

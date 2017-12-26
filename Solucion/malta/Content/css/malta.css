@@ -17,7 +17,7 @@
 }
 
     .button:hover {
-        background: #64c34b;
+        background: #009bff;
     }
 
 a {
@@ -595,7 +595,9 @@ ul#links-main-menu {
         }
 
 .info-articulo {
-    padding-top: 14rem;
+    margin-top: 8rem;
+    padding: 1rem;
+    background: rgba(87, 96, 101, 0.35);
 }
 
     .info-articulo h4 {
@@ -605,6 +607,23 @@ ul#links-main-menu {
     .info-articulo .autor {
         color: #fff;
     }
+
+.thumb-noticia {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+    .thumb-noticia img {
+        border: 1px solid #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    }
+
+#nota-home {
+    background: transparent;
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
 
 .linea-productos {
     margin: 2rem auto 3rem;
@@ -849,7 +868,7 @@ footer {
     }
 
     footer a {
-        color: #64c34b;
+        color: #009bff;
         font-size: .8125rem;
         margin-right: .85rem;
         font-weight: 700;
@@ -866,7 +885,7 @@ footer {
 
 .reveal {
     border: none;
-    border-bottom: 4px solid #64c34b;
+    border-bottom: 4px solid #009bff;
 }
 
 #intro-malta .row {

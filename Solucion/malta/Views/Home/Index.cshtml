@@ -1,6 +1,7 @@
 ﻿@{
     ViewBag.Title = "Inicio";
 }
+<link href="~/Content/css/video.css" rel="stylesheet" />
 <div id="hero">
     <div class="expanded row large-collapse medium-collapse">
         <div class="large-4 medium-4 columns">
@@ -20,46 +21,42 @@
         </div>
     </div>
 </div>
-
 <div id="intro-malta">
     <div class="row">
-        <div class="large-6 medium-6 large-offset-6 medium-offset-6 columns">
+        <!-- <div class="large-6 medium-6 large-offset-6 medium-offset-6 columns" style="background-color:transparent !important; text-align:left !important">-->
+            <video controls ="controls" controlsList="nodownload" class="principalVideo video" >
+                <source src="~/Content/video/Neovia%20ANIMALES_1.mp4" type="video/mp4" />
+            </video>
+         <!--</div>
+
+         <!-- <div class="large-6 medium-6 large-offset-6 medium-offset-6 columns">
             <p>En maltaCleyton® estamos comprometidos con la plena satisfacción de las necesidades de nuestros clientes y consumidores en el rubro de la nutrición y salud animal. </p>
             <p>Por ello, contamos con un amplio portafolio de productos para animales de producción, especialidad y compañía a través del cual aseguramos el bienestar de los mismos y la entrega de un alto valor a nuestros clientes.  </p>
-        </div>
+        </div> -->
+
     </div>
 </div>
 <div id="blog-home">
     <div class="row">
-        <div class="large-10 columns">
-            <h2>Noticias</h2>
-        </div>
-        <div class="large-2 columns text-right">
-            <a href="/Blog/noticias" style="text-transform:uppercase;">Ver todas <i class="fa fa-angle-right" style="font-size:.875rem;"></i></a>
+        <div class="large-12 columns">
+            <h2 class="float-left">Noticias</h2>
+            <a href="/Blog/noticias" style="text-transform:uppercase;" class="float-right">Ver todas <i class="fa fa-angle-right" style="font-size:.875rem;"></i></a>
         </div>
     </div>
     <div id="nota-home">
         <div class="row">
-            <div class="large-7 columns" style="color:#000000;">
-                @if (ViewBag.numero > 0)
-                {
-                    <a href="/Blog/ficha?id=@ViewBag.nota_id&tipo=noticias">
-                        <div class="info-articulo respuesta">
-                            <h4>@ViewBag.nota_titulo</h4>
-                            <p class="autor">@ViewBag.nota_autor</p>
-                        </div>
-                    </a>
-                }
-                else
-                {
-                    <a href="http://www.porcicultura.com/porcicultura/home/noticias-interior.asp?cve_noticia=17926">
-                        <div class="info-articulo respuesta">
-                            <h4>El cerdo será la primera víctima de la guerra comercial México-EU</h4>
-                            <p class="autor">porcicultura.com</p>
-                        </div>
-                    </a>
-                }
-
+            <div class="large-offset-1 large-5 medium-5 columns">
+                <div class="thumb-noticia">
+                    <img src="@ViewBag.nota_img" alt="">
+                </div>
+            </div>
+            <div class="large-6 medium-6 end columns">
+                <a href="/Blog/ficha?id=@ViewBag.nota_id&tipo=noticias">
+                    <div class="info-articulo">
+                        <h4>@ViewBag.nota_titulo</h4> 
+                        <p class="autor">@ViewBag.nota_autor</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -118,10 +115,9 @@
     </div>
 </div>
 
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="~/Scripts/geo.js"></script>
+
 <script type="text/javascript">
 
     // SoftScroll
@@ -134,6 +130,7 @@
             // img/bg-templete.jpg
             img_noticia = 'Content/img/bg-templete.jpg';
         }
+        $('#nota-home').parallax({ imageSrc: ROOT + 'img/articulos/bg-noticias.jpg' });
         // Backstretch
         $("#title").backstretch(["https://source.unsplash.com/category/nature/1600x900"], { duration: 3200, fade: 750 });
         $("#intro-pecuario").backstretch([ROOT + "img/bg-intro-pecuario.jpg"], { duration: 3200, fade: 750 });

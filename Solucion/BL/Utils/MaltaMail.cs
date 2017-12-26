@@ -70,7 +70,10 @@
 
                 mmsg.From = new System.Net.Mail.MailAddress(this.From);
 
-                mmsg.Attachments.Add(new Attachment(this.Attachment, this.AttachmentName, this.AttachmentMediaType));
+                if (this.Attachment != null && !string.IsNullOrEmpty(this.AttachmentName) && !string.IsNullOrEmpty(this.AttachmentMediaType))
+                {
+                    mmsg.Attachments.Add(new Attachment(this.Attachment, this.AttachmentName, this.AttachmentMediaType));
+                }
 
                 System.Net.Mail.SmtpClient cliente = new System.Net.Mail.SmtpClient();
                 cliente.Credentials = new System.Net.NetworkCredential(this.User, this.Password);

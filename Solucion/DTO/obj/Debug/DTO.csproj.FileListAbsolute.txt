@@ -2,3 +2,4 @@ C:\Users\acer\Documents\Nuevos proyectos\ALO\Solucion\DTO\bin\Debug\DTO.dll
 C:\Users\acer\Documents\Nuevos proyectos\ALO\Solucion\DTO\bin\Debug\DTO.pdb
 C:\Users\acer\Documents\Nuevos proyectos\ALO\Solucion\DTO\obj\Debug\DTO.dll
 C:\Users\acer\Documents\Nuevos proyectos\ALO\Solucion\DTO\obj\Debug\DTO.pdb
+C:\Users\acer\Documents\Nuevos proyectos\ALO\Solucion\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache

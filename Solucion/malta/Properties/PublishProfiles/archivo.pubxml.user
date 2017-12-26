@@ -12,11 +12,23 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>02/22/2013 08:43:40</publishTime>
     </File>
+    <File Include="bin/BL.dll">
+      <publishTime>12/07/2017 06:51:07</publishTime>
+    </File>
+    <File Include="bin/DAL.dll">
+      <publishTime>12/07/2017 06:51:07</publishTime>
+    </File>
+    <File Include="bin/DTO.dll">
+      <publishTime>12/07/2017 06:51:06</publishTime>
+    </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>03/02/2015 09:32:26</publishTime>
     </File>
     <File Include="bin/EntityFramework.SqlServer.dll">
       <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>07/14/2016 14:57:38</publishTime>
     </File>
     <File Include="bin/es/EntityFramework.resources.dll">
       <publishTime>03/02/2015 09:32:42</publishTime>
@@ -76,7 +88,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>01/28/2015 04:04:36</publishTime>
     </File>
     <File Include="bin/malta.dll">
-      <publishTime>08/30/2017 08:14:56</publishTime>
+      <publishTime>12/07/2017 06:51:14</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
       <publishTime>04/03/2015 17:07:22</publishTime>
@@ -196,85 +208,523 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>09/10/2013 18:28:38</publishTime>
     </File>
     <File Include="Content/css/app.css">
-      <publishTime>05/19/2017 11:28:32</publishTime>
+      <publishTime>10/11/2017 23:40:37</publishTime>
     </File>
     <File Include="Content/css/malta.css">
-      <publishTime>08/25/2017 07:46:06</publishTime>
+      <publishTime>10/12/2017 00:12:12</publishTime>
+    </File>
+    <File Include="Content/css/prevision.css">
+      <publishTime>10/17/2017 01:14:14</publishTime>
+    </File>
+    <File Include="Content/css/prevision/animate.css">
+      <publishTime>10/25/2017 08:22:40</publishTime>
+    </File>
+    <File Include="Content/css/prevision/bootstrap.min.css">
+      <publishTime>10/25/2017 08:22:40</publishTime>
+    </File>
+    <File Include="Content/css/prevision/map.css">
+      <publishTime>10/25/2017 08:22:40</publishTime>
+    </File>
+    <File Include="Content/css/prevision/owl.carousel.min.css">
+      <publishTime>10/25/2017 08:22:40</publishTime>
+    </File>
+    <File Include="Content/css/prevision/owl.theme.default.min.css">
+      <publishTime>10/25/2017 08:22:40</publishTime>
+    </File>
+    <File Include="Content/css/prevision/style.css">
+      <publishTime>10/25/2017 08:22:40</publishTime>
+    </File>
+    <File Include="Content/css/video.css">
+      <publishTime>10/17/2017 23:29:21</publishTime>
+    </File>
+    <File Include="Content/img/acuacultura/bernaqua-linea.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/acuacultura/bernaqua-logo-old.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/acuacultura/caviar-cubeta.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/acuacultura/mem-cubeta.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/acuacultura/red-pepper.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/acuacultura/royal-caviar-lata.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/acuacultura/royal-seafood.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/acuacultura/vitellius-cubeta.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/acuacultura/vitellus-cubeta.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/acuacultura/vitellus.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/articulos/bg-noticias.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/articulos/noticia-03.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/articulos/noticia-04.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/articulos/noticia-1.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/articulos/noticia-2.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-aves-postura.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-bagres.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-borregos.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-caballos.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-cabras.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-camarones.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-cerdo.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-cerdos.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-codornices.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-conejos.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-corderos.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-especie.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-gallos.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-ganado-carne.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-ganado-lechero.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-gatos.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-inicio-malta.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-intro-acuacultura.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-intro-mascotas.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-intro-pecuario.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-nosotros-historia.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-nosotros-neovia.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-nosotros.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-noticias.jpg">
+      <publishTime>10/08/2017 20:22:47</publishTime>
+    </File>
+    <File Include="Content/img/bg-pavos.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-perros.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-pollo-engorda.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-qualian.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-qualian2.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/bg-templete.jpg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-tilapias.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/bg-truchas.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/camión.png">
+      <publishTime>10/26/2017 08:01:38</publishTime>
+    </File>
+    <File Include="Content/img/cerdo/api-aba-cerdo-ganador-40.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/cerdo/malta-cerdo-ganador-5.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/cross.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-aves-postura.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-avestruces.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-bagres.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-borregos.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-caballos.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-cabras.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-camarones.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-cerdos.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-codornices.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-conejos.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-corderos.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-empty.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-gallos.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-ganado-carne.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-ganado-lechero.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-gatos.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-pavos.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-perros.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-pollo-engorda.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-salud.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-tilapias.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/e-truchas.svg">
-      <publishTime>08/09/2017 08:35:04</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/email/costales.png">
+      <publishTime>10/12/2017 00:36:56</publishTime>
+    </File>
+    <File Include="Content/img/email/facebook.png">
+      <publishTime>10/12/2017 00:36:56</publishTime>
+    </File>
+    <File Include="Content/img/email/imago-footer.png">
+      <publishTime>10/12/2017 00:36:56</publishTime>
+    </File>
+    <File Include="Content/img/email/logo-maltacleyton.svg">
+      <publishTime>10/12/2017 00:36:56</publishTime>
+    </File>
+    <File Include="Content/img/email/mc.jpg">
+      <publishTime>10/12/2017 00:36:56</publishTime>
+    </File>
+    <File Include="Content/img/email/mc.png">
+      <publishTime>10/12/2017 00:36:56</publishTime>
+    </File>
+    <File Include="Content/img/email/pecuarios.jpg">
+      <publishTime>10/12/2017 00:36:56</publishTime>
+    </File>
+    <File Include="Content/img/email/twitter.png">
+      <publishTime>10/12/2017 00:36:56</publishTime>
+    </File>
+    <File Include="Content/img/favicon.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/foto-expertos-home.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/foto-granja.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/gallos/gallo-de-oro-super-baby-40.png">
+      <publishTime>10/12/2017 00:36:56</publishTime>
+    </File>
+    <File Include="Content/img/gallos/gallo-de-oro-super-baby-5.png">
+      <publishTime>10/12/2017 00:36:56</publishTime>
+    </File>
+    <File Include="Content/img/gato/minino-linea.png">
+      <publishTime>10/12/2017 00:36:56</publishTime>
+    </File>
+    <File Include="Content/img/gato/vital5.png">
+      <publishTime>10/12/2017 00:36:56</publishTime>
+    </File>
+    <File Include="Content/img/header-aves-postura.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-bagres.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-borregos.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-caballo.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-caballos.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-cabras.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-camarones.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-cerdo.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-cerdos.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-codornices.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-conejo.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-conejos.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-cordero.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-gallo.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-ganado-carne.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-ganado-lechero.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-gatos.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-pavos.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-perros.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-pollo-engorda.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-tilapias.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/header-truchas.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/i-ceniza.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/i-eln.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/i-fibra.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/i-grasa.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/i-humedad.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/i-proteina.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/imago-footer.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/imago-malta.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/l-cerdo-api-aba.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/l-cerdo-malta.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/l-cerdo-premium.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/l-salud.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/logo-maltacleyton.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/logo-qualian-b.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/logo-qualian.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/logo-smart-center.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/mapa-neovia.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/mapa-plantas.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/mapa-plantas.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/neovia-b.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/neovia.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/neovia.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/Neovia_Ss_BZL_QP-01.svg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/noticia-04.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/pavo/apiaba-pavo-ganador-5.png">
+      <publishTime>10/12/2017 00:36:53</publishTime>
+    </File>
+    <File Include="Content/img/pavo/pavo-ganador-5.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/perro/ganador-lineas.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/planta-morelos.jpg">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/pollo/apiaba-gallina-ganador-5.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/pollo/apiaba-pollo-ganador-1-5.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/pollo/apiaba-pollo-ganador-2-5.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/pollo/apiaba-pollo-oro-balance-20.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/pollo/gallina-ganador.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/pollo/genesa-20.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/pollo/genesa-golden-egg.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/pollo/malta-pollo-ganador-5.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/prevision/bg_galax.jpg">
+      <publishTime>10/17/2017 01:14:04</publishTime>
+    </File>
+    <File Include="Content/img/prevision/mapa.png">
+      <publishTime>10/17/2017 00:57:58</publishTime>
+    </File>
+    <File Include="Content/img/prevision/n-aves.svg">
+      <publishTime>10/17/2017 00:06:33</publishTime>
+    </File>
+    <File Include="Content/img/prevision/n-bovino.svg">
+      <publishTime>10/17/2017 00:06:33</publishTime>
+    </File>
+    <File Include="Content/img/prevision/n-caprino.svg">
+      <publishTime>10/17/2017 00:06:33</publishTime>
+    </File>
+    <File Include="Content/img/prevision/n-cerdos.svg">
+      <publishTime>10/17/2017 00:06:33</publishTime>
+    </File>
+    <File Include="Content/img/prevision/n-huevo.svg">
+      <publishTime>10/17/2017 00:06:33</publishTime>
+    </File>
+    <File Include="Content/img/prevision/n-ovino.svg">
+      <publishTime>10/17/2017 00:06:33</publishTime>
+    </File>
+    <File Include="Content/img/prevision/portada_inicio.jpg">
+      <publishTime>10/17/2017 00:04:34</publishTime>
+    </File>
+    <File Include="Content/img/prevision/portada_porcino.jpg">
+      <publishTime>10/17/2017 00:57:30</publishTime>
     </File>
     <File Include="Content/img/rumiantes/apiaba-rumiantes-premium-40.png">
-      <publishTime>08/09/2017 08:35:12</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/salud/dt-mousse.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/salud/purlite.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/salud/septicid-nat.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/salud/tripuricide.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
+    </File>
+    <File Include="Content/img/salud/vulkan.png">
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/img/vital5.png">
-      <publishTime>04/17/2017 17:39:26</publishTime>
+      <publishTime>10/12/2017 00:36:55</publishTime>
     </File>
     <File Include="Content/js/anim.js">
       <publishTime>05/02/2017 17:35:30</publishTime>
@@ -483,11 +933,35 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="Content/js/what-input.min.js">
       <publishTime>05/02/2017 17:35:24</publishTime>
     </File>
+    <File Include="Content/template/Cotizaciones.xlsx">
+      <publishTime>10/08/2017 19:20:52</publishTime>
+    </File>
+    <File Include="Content/template/email.html">
+      <publishTime>10/05/2017 00:56:51</publishTime>
+    </File>
+    <File Include="Content/template/Quotation.html">
+      <publishTime>10/05/2017 00:56:51</publishTime>
+    </File>
+    <File Include="Content/template/Quotation.xlsx">
+      <publishTime>10/08/2017 19:20:52</publishTime>
+    </File>
+    <File Include="Content/template/RecoverPassword.html">
+      <publishTime>11/02/2017 21:04:53</publishTime>
+    </File>
+    <File Include="Content/video/Neovia ANIMALES_1.mp4">
+      <publishTime>10/11/2017 23:14:42</publishTime>
+    </File>
     <File Include="Cot/bg-inicio-malta.jpg">
       <publishTime>08/29/2017 21:35:32</publishTime>
     </File>
+    <File Include="Cot/ChangePassword.html">
+      <publishTime>10/29/2017 21:50:12</publishTime>
+    </File>
+    <File Include="Cot/ChangePasswordMail.html">
+      <publishTime>10/22/2017 21:20:39</publishTime>
+    </File>
     <File Include="Cot/cot.html">
-      <publishTime>08/30/2017 06:01:37</publishTime>
+      <publishTime>10/29/2017 13:40:36</publishTime>
     </File>
     <File Include="Cot/cotizador.txt">
       <publishTime>08/29/2017 21:35:32</publishTime>
@@ -496,22 +970,22 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>08/29/2017 23:55:56</publishTime>
     </File>
     <File Include="Cot/css/form.css">
-      <publishTime>08/30/2017 00:56:04</publishTime>
+      <publishTime>10/22/2017 20:52:37</publishTime>
     </File>
     <File Include="Cot/css/loader.css">
       <publishTime>08/29/2017 23:24:38</publishTime>
     </File>
     <File Include="Cot/css/modal.css">
-      <publishTime>08/30/2017 00:49:05</publishTime>
+      <publishTime>10/12/2017 01:36:34</publishTime>
     </File>
     <File Include="Cot/css/style.css">
-      <publishTime>08/29/2017 22:57:22</publishTime>
+      <publishTime>10/27/2017 14:37:07</publishTime>
     </File>
     <File Include="Cot/css/styles.css">
       <publishTime>08/30/2017 00:46:16</publishTime>
     </File>
     <File Include="Cot/css/table.css">
-      <publishTime>08/29/2017 21:35:32</publishTime>
+      <publishTime>10/29/2017 13:46:46</publishTime>
     </File>
     <File Include="Cot/Formato pedidos plantas enviado a agencia 22ago17.xlsx">
       <publishTime>08/29/2017 21:35:32</publishTime>
@@ -519,14 +993,35 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="Cot/img/add-icon.png">
       <publishTime>08/29/2017 21:35:32</publishTime>
     </File>
+    <File Include="Cot/img/bg-noticias.jpg">
+      <publishTime>10/08/2017 20:28:58</publishTime>
+    </File>
+    <File Include="Cot/img/camión.png">
+      <publishTime>10/26/2017 08:02:33</publishTime>
+    </File>
     <File Include="Cot/img/delete-icon.png">
       <publishTime>08/29/2017 21:35:32</publishTime>
     </File>
     <File Include="Cot/img/Edit-icon.png">
       <publishTime>08/29/2017 21:35:32</publishTime>
     </File>
+    <File Include="Cot/img/GrisConstelaciones.jpg">
+      <publishTime>10/27/2017 14:08:23</publishTime>
+    </File>
+    <File Include="Cot/img/LogOut.png">
+      <publishTime>10/08/2017 21:19:21</publishTime>
+    </File>
+    <File Include="Cot/img/User.png">
+      <publishTime>10/08/2017 21:29:18</publishTime>
+    </File>
+    <File Include="Cot/js/ChangePassword.js">
+      <publishTime>10/29/2017 22:36:27</publishTime>
+    </File>
+    <File Include="Cot/js/ChangePasswordMail.js">
+      <publishTime>10/22/2017 22:37:02</publishTime>
+    </File>
     <File Include="Cot/js/cot.js">
-      <publishTime>08/30/2017 06:03:41</publishTime>
+      <publishTime>10/29/2017 13:52:37</publishTime>
     </File>
     <File Include="Cot/js/libs/base.js">
       <publishTime>08/29/2017 21:51:39</publishTime>
@@ -751,22 +1246,25 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>08/29/2017 21:51:40</publishTime>
     </File>
     <File Include="Cot/js/login.js">
-      <publishTime>08/29/2017 23:23:33</publishTime>
+      <publishTime>10/29/2017 22:31:39</publishTime>
+    </File>
+    <File Include="Cot/js/RecoverPassword.js">
+      <publishTime>10/22/2017 19:36:22</publishTime>
     </File>
     <File Include="Cot/js/scripts.js">
       <publishTime>08/29/2017 21:51:40</publishTime>
     </File>
     <File Include="Cot/js/send.js">
-      <publishTime>08/29/2017 21:35:32</publishTime>
+      <publishTime>10/22/2017 15:43:36</publishTime>
     </File>
     <File Include="Cot/js/utilities.js">
-      <publishTime>08/30/2017 05:52:41</publishTime>
+      <publishTime>10/22/2017 20:50:27</publishTime>
     </File>
     <File Include="Cot/Listas de Precios envíe Agencia 22ago17.xlsx">
       <publishTime>08/29/2017 21:35:32</publishTime>
     </File>
     <File Include="Cot/login.html">
-      <publishTime>08/29/2017 23:57:38</publishTime>
+      <publishTime>10/27/2017 14:37:43</publishTime>
     </File>
     <File Include="Cot/neovia.png">
       <publishTime>08/29/2017 21:35:32</publishTime>
@@ -774,8 +1272,11 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="Cot/Nosotros_pri meros cambios.cshtml.txt">
       <publishTime>08/29/2017 21:35:32</publishTime>
     </File>
+    <File Include="Cot/RecoverPassword.html">
+      <publishTime>10/22/2017 16:38:01</publishTime>
+    </File>
     <File Include="Cot/send.html">
-      <publishTime>08/29/2017 21:35:32</publishTime>
+      <publishTime>10/27/2017 14:37:31</publishTime>
     </File>
     <File Include="Cot/tabla.html">
       <publishTime>08/29/2017 21:35:32</publishTime>
@@ -805,13 +1306,679 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>04/17/2017 09:08:46</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>03/30/2017 11:43:58</publishTime>
+      <publishTime>10/16/2017 23:52:58</publishTime>
+    </File>
+    <File Include="Previsio/aves.html">
+      <publishTime>11/13/2017 23:55:18</publishTime>
+    </File>
+    <File Include="Previsio/bovino.html">
+      <publishTime>11/13/2017 23:55:18</publishTime>
+    </File>
+    <File Include="Previsio/caprino.html">
+      <publishTime>11/13/2017 23:55:16</publishTime>
+    </File>
+    <File Include="Previsio/css/animate.css">
+      <publishTime>11/13/2017 20:11:50</publishTime>
+    </File>
+    <File Include="Previsio/css/bootstrap.min.css">
+      <publishTime>11/13/2017 20:11:52</publishTime>
+    </File>
+    <File Include="Previsio/css/map.css">
+      <publishTime>11/13/2017 20:11:50</publishTime>
+    </File>
+    <File Include="Previsio/css/owl.carousel.min.css">
+      <publishTime>11/13/2017 20:11:50</publishTime>
+    </File>
+    <File Include="Previsio/css/owl.theme.default.min.css">
+      <publishTime>11/13/2017 20:11:50</publishTime>
+    </File>
+    <File Include="Previsio/css/style.css">
+      <publishTime>11/13/2017 20:11:50</publishTime>
+    </File>
+    <File Include="Previsio/edos/aves/baja_california_sur.php">
+      <publishTime>11/13/2017 20:11:38</publishTime>
+    </File>
+    <File Include="Previsio/edos/aves/distrito_federal.php">
+      <publishTime>11/13/2017 20:11:38</publishTime>
+    </File>
+    <File Include="Previsio/edos/aves/queretaro.php">
+      <publishTime>11/13/2017 20:11:36</publishTime>
+    </File>
+    <File Include="Previsio/edos/aves/zacatecas.php">
+      <publishTime>11/13/2017 20:11:36</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/aguascalientes.php">
+      <publishTime>11/13/2017 20:11:40</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/baja_california_sur.php">
+      <publishTime>11/13/2017 20:11:40</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/campeche.php">
+      <publishTime>11/13/2017 20:11:40</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/chiapas.php">
+      <publishTime>11/13/2017 20:11:40</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/coahuila.php">
+      <publishTime>11/13/2017 20:11:40</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/durango.php">
+      <publishTime>11/13/2017 20:11:38</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/guanajuato.php">
+      <publishTime>11/13/2017 20:11:38</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/jalisco.php">
+      <publishTime>11/13/2017 20:11:38</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/michoacan.php">
+      <publishTime>11/13/2017 20:11:38</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/oaxaca.php">
+      <publishTime>11/13/2017 20:11:38</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/sinaloa.php">
+      <publishTime>11/13/2017 20:11:38</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/sonora.php">
+      <publishTime>11/13/2017 20:11:38</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/veracruz.php">
+      <publishTime>11/13/2017 20:11:38</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/yucatan.php">
+      <publishTime>11/13/2017 20:11:38</publishTime>
+    </File>
+    <File Include="Previsio/edos/bovino/zacatecas.php">
+      <publishTime>11/13/2017 20:11:38</publishTime>
+    </File>
+    <File Include="Previsio/edos/caprino/aguascalientes.php">
+      <publishTime>11/13/2017 20:11:40</publishTime>
+    </File>
+    <File Include="Previsio/edos/caprino/colima.php">
+      <publishTime>11/13/2017 20:11:40</publishTime>
+    </File>
+    <File Include="Previsio/edos/caprino/jalisco.php">
+      <publishTime>11/13/2017 20:11:40</publishTime>
+    </File>
+    <File Include="Previsio/edos/caprino/nuevo_leon.php">
+      <publishTime>11/13/2017 20:11:40</publishTime>
+    </File>
+    <File Include="Previsio/edos/caprino/san_luis_potosi.php">
+      <publishTime>11/13/2017 20:11:40</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/aguascalientes.php">
+      <publishTime>11/13/2017 20:11:44</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/baja_california.php">
+      <publishTime>11/13/2017 20:11:44</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/baja_california_sur.php">
+      <publishTime>11/13/2017 20:11:44</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/campeche.php">
+      <publishTime>11/13/2017 20:11:44</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/chiapas.php">
+      <publishTime>11/13/2017 23:44:42</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/chihuahua.php">
+      <publishTime>11/13/2017 20:11:44</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/coahuila.php">
+      <publishTime>11/13/2017 20:11:44</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/colima.php">
+      <publishTime>11/13/2017 20:11:44</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/distrito_federal.php">
+      <publishTime>11/13/2017 20:11:44</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/durango.php">
+      <publishTime>11/13/2017 20:11:44</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/edo_mex.php">
+      <publishTime>11/13/2017 20:11:44</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/guanajuato.php">
+      <publishTime>11/13/2017 20:11:44</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/guerrero.php">
+      <publishTime>11/13/2017 20:11:44</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/jalisco.php">
+      <publishTime>11/13/2017 20:11:42</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/michoacan.php">
+      <publishTime>11/13/2017 20:11:42</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/morelos.php">
+      <publishTime>11/13/2017 20:11:42</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/nayarit.php">
+      <publishTime>11/13/2017 20:11:42</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/nuevo_leon.php">
+      <publishTime>11/13/2017 20:11:42</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/oaxaca.php">
+      <publishTime>11/13/2017 20:11:42</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/puebla.php">
+      <publishTime>11/13/2017 20:11:42</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/queretaro.php">
+      <publishTime>11/13/2017 20:11:42</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/quintana_roo.php">
+      <publishTime>11/13/2017 20:11:42</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/san_luis_potosi.php">
+      <publishTime>11/13/2017 20:11:42</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/sinaloa.php">
+      <publishTime>11/13/2017 20:11:42</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/sonora.php">
+      <publishTime>11/13/2017 23:09:40</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/tabasco.php">
+      <publishTime>11/13/2017 20:11:42</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/tamaulipas.php">
+      <publishTime>11/13/2017 20:11:42</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/veracruz.php">
+      <publishTime>11/13/2017 20:11:40</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/yucatan.php">
+      <publishTime>11/13/2017 20:11:40</publishTime>
+    </File>
+    <File Include="Previsio/edos/huevo/zacatecas.php">
+      <publishTime>11/13/2017 20:11:40</publishTime>
+    </File>
+    <File Include="Previsio/edos/ovino/aguascalientes.php">
+      <publishTime>11/13/2017 20:11:46</publishTime>
+    </File>
+    <File Include="Previsio/edos/ovino/distrito_federal.php">
+      <publishTime>11/13/2017 20:11:46</publishTime>
+    </File>
+    <File Include="Previsio/edos/ovino/guanajuato.php">
+      <publishTime>11/13/2017 20:11:46</publishTime>
+    </File>
+    <File Include="Previsio/edos/ovino/jalisco.php">
+      <publishTime>11/13/2017 20:11:46</publishTime>
+    </File>
+    <File Include="Previsio/edos/ovino/queretaro.php">
+      <publishTime>11/13/2017 20:11:46</publishTime>
+    </File>
+    <File Include="Previsio/edos/ovino/san_luis_potosi.php">
+      <publishTime>11/13/2017 20:11:46</publishTime>
+    </File>
+    <File Include="Previsio/edos/porcino/aguascalientes.php">
+      <publishTime>11/13/2017 20:11:48</publishTime>
+    </File>
+    <File Include="Previsio/edos/porcino/colima.php">
+      <publishTime>11/13/2017 20:11:48</publishTime>
+    </File>
+    <File Include="Previsio/edos/porcino/distrito_federal.php">
+      <publishTime>11/13/2017 20:11:48</publishTime>
+    </File>
+    <File Include="Previsio/edos/porcino/durango.php">
+      <publishTime>11/13/2017 20:11:48</publishTime>
+    </File>
+    <File Include="Previsio/edos/porcino/guanajuato.php">
+      <publishTime>11/13/2017 20:11:48</publishTime>
+    </File>
+    <File Include="Previsio/edos/porcino/jalisco.php">
+      <publishTime>11/13/2017 20:11:48</publishTime>
+    </File>
+    <File Include="Previsio/edos/porcino/michoacan.php">
+      <publishTime>11/13/2017 20:11:48</publishTime>
+    </File>
+    <File Include="Previsio/edos/porcino/nuevo_leon.php">
+      <publishTime>11/13/2017 20:11:48</publishTime>
+    </File>
+    <File Include="Previsio/edos/porcino/puebla.php">
+      <publishTime>11/13/2017 20:11:46</publishTime>
+    </File>
+    <File Include="Previsio/edos/porcino/queretaro.php">
+      <publishTime>11/13/2017 20:11:46</publishTime>
+    </File>
+    <File Include="Previsio/edos/porcino/sonora.php">
+      <publishTime>11/13/2017 20:11:46</publishTime>
+    </File>
+    <File Include="Previsio/edos/porcino/veracruz.php">
+      <publishTime>11/13/2017 20:11:46</publishTime>
+    </File>
+    <File Include="Previsio/edos/porcino/yucatan.php">
+      <publishTime>11/13/2017 20:11:46</publishTime>
+    </File>
+    <File Include="Previsio/huevo.html">
+      <publishTime>11/13/2017 23:55:16</publishTime>
+    </File>
+    <File Include="Previsio/images/arrow.png">
+      <publishTime>11/13/2017 20:11:32</publishTime>
+    </File>
+    <File Include="Previsio/images/bg_galax.jpg">
+      <publishTime>11/13/2017 20:11:32</publishTime>
+    </File>
+    <File Include="Previsio/images/e-aves-postura.svg">
+      <publishTime>11/13/2017 20:11:32</publishTime>
+    </File>
+    <File Include="Previsio/images/e-borregos.svg">
+      <publishTime>11/13/2017 20:11:32</publishTime>
+    </File>
+    <File Include="Previsio/images/e-caballos.svg">
+      <publishTime>11/13/2017 20:11:32</publishTime>
+    </File>
+    <File Include="Previsio/images/e-camarones.svg">
+      <publishTime>11/13/2017 20:11:32</publishTime>
+    </File>
+    <File Include="Previsio/images/e-cerdos.svg">
+      <publishTime>11/13/2017 20:11:32</publishTime>
+    </File>
+    <File Include="Previsio/images/e-conejos.svg">
+      <publishTime>11/13/2017 20:11:32</publishTime>
+    </File>
+    <File Include="Previsio/images/e-ganado-carne.svg">
+      <publishTime>11/13/2017 20:11:32</publishTime>
+    </File>
+    <File Include="Previsio/images/e-perros.svg">
+      <publishTime>11/13/2017 20:11:30</publishTime>
+    </File>
+    <File Include="Previsio/images/e-salud.svg">
+      <publishTime>11/13/2017 20:11:30</publishTime>
+    </File>
+    <File Include="Previsio/images/escudos.png">
+      <publishTime>11/13/2017 20:11:32</publishTime>
+    </File>
+    <File Include="Previsio/images/imago-footer.png">
+      <publishTime>11/13/2017 20:11:28</publishTime>
+    </File>
+    <File Include="Previsio/images/imago-malta.svg">
+      <publishTime>11/13/2017 20:11:28</publishTime>
+    </File>
+    <File Include="Previsio/images/line-chart.svg">
+      <publishTime>11/13/2017 20:11:28</publishTime>
+    </File>
+    <File Include="Previsio/images/logo-maltacleyton.svg">
+      <publishTime>11/13/2017 20:11:28</publishTime>
+    </File>
+    <File Include="Previsio/images/logo-smart-center.svg">
+      <publishTime>11/13/2017 20:11:26</publishTime>
+    </File>
+    <File Include="Previsio/images/mapa.png">
+      <publishTime>11/13/2017 20:11:28</publishTime>
+    </File>
+    <File Include="Previsio/images/n-aves.svg">
+      <publishTime>11/13/2017 20:11:26</publishTime>
+    </File>
+    <File Include="Previsio/images/n-bovino.svg">
+      <publishTime>11/13/2017 20:11:26</publishTime>
+    </File>
+    <File Include="Previsio/images/n-caprino.svg">
+      <publishTime>11/13/2017 20:11:26</publishTime>
+    </File>
+    <File Include="Previsio/images/n-cerdos.svg">
+      <publishTime>11/13/2017 20:11:26</publishTime>
+    </File>
+    <File Include="Previsio/images/n-huevo.svg">
+      <publishTime>11/13/2017 20:11:26</publishTime>
+    </File>
+    <File Include="Previsio/images/n-ovino.svg">
+      <publishTime>11/13/2017 20:11:26</publishTime>
+    </File>
+    <File Include="Previsio/images/neovia.svg">
+      <publishTime>11/13/2017 20:11:26</publishTime>
+    </File>
+    <File Include="Previsio/images/portada_inicio.jpg">
+      <publishTime>11/13/2017 20:11:26</publishTime>
+    </File>
+    <File Include="Previsio/images/portada_porcino.jpg">
+      <publishTime>11/13/2017 20:11:26</publishTime>
+    </File>
+    <File Include="Previsio/js/bootstrap.min.js">
+      <publishTime>11/13/2017 20:11:52</publishTime>
+    </File>
+    <File Include="Previsio/js/Chart.bundle.min.js">
+      <publishTime>11/13/2017 20:11:54</publishTime>
+    </File>
+    <File Include="Previsio/js/jquery.min.js">
+      <publishTime>11/13/2017 20:11:52</publishTime>
+    </File>
+    <File Include="Previsio/js/map_script.js">
+      <publishTime>11/13/2017 20:11:52</publishTime>
+    </File>
+    <File Include="Previsio/js/owl.carousel.min.js">
+      <publishTime>11/13/2017 20:11:52</publishTime>
+    </File>
+    <File Include="Previsio/ovino.html">
+      <publishTime>11/13/2017 23:55:16</publishTime>
+    </File>
+    <File Include="Previsio/porcino.html">
+      <publishTime>11/13/2017 23:55:16</publishTime>
+    </File>
+    <File Include="Previsio/prevision.html">
+      <publishTime>11/13/2017 23:55:16</publishTime>
+    </File>
+    <File Include="Quotation/ChangePassword.html">
+      <publishTime>11/02/2017 20:30:42</publishTime>
+    </File>
+    <File Include="Quotation/ChangePasswordMail.html">
+      <publishTime>11/02/2017 20:30:37</publishTime>
+    </File>
+    <File Include="Quotation/css/button.css">
+      <publishTime>08/29/2017 23:55:56</publishTime>
+    </File>
+    <File Include="Quotation/css/comboBox.css">
+      <publishTime>11/07/2017 23:06:46</publishTime>
+    </File>
+    <File Include="Quotation/css/form.css">
+      <publishTime>10/22/2017 20:52:37</publishTime>
+    </File>
+    <File Include="Quotation/css/loader.css">
+      <publishTime>08/29/2017 23:24:38</publishTime>
+    </File>
+    <File Include="Quotation/css/modal.css">
+      <publishTime>11/02/2017 20:21:03</publishTime>
+    </File>
+    <File Include="Quotation/css/style.css">
+      <publishTime>10/27/2017 14:37:07</publishTime>
+    </File>
+    <File Include="Quotation/css/styles.css">
+      <publishTime>08/30/2017 00:46:16</publishTime>
+    </File>
+    <File Include="Quotation/css/table.css">
+      <publishTime>10/29/2017 13:46:46</publishTime>
+    </File>
+    <File Include="Quotation/img/add-icon.png">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Quotation/img/bg-noticias.jpg">
+      <publishTime>10/08/2017 20:28:58</publishTime>
+    </File>
+    <File Include="Quotation/img/camión.png">
+      <publishTime>10/26/2017 08:02:33</publishTime>
+    </File>
+    <File Include="Quotation/img/delete-icon.png">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Quotation/img/Edit-icon.png">
+      <publishTime>08/29/2017 21:35:32</publishTime>
+    </File>
+    <File Include="Quotation/img/GrisConstelaciones.jpg">
+      <publishTime>10/27/2017 14:08:23</publishTime>
+    </File>
+    <File Include="Quotation/img/LogOut.png">
+      <publishTime>10/08/2017 21:19:21</publishTime>
+    </File>
+    <File Include="Quotation/img/User.png">
+      <publishTime>10/08/2017 21:29:18</publishTime>
+    </File>
+    <File Include="Quotation/js/ChangePassword.js">
+      <publishTime>11/02/2017 20:27:38</publishTime>
+    </File>
+    <File Include="Quotation/js/ChangePasswordMail.js">
+      <publishTime>11/02/2017 20:27:24</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/base.js">
+      <publishTime>08/29/2017 21:51:39</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/base.min.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/close.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/closeX.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/controlbar-black-border.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/controlbar-text-buttons.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/controlbar-white-small.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/controlbar-white.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/controlbar2.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/controlbar3.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/controlbar4-hover.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/controlbar4.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/fullexpand.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/geckodimmer.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/icon.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/loader.big.black.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/loader.big.white.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/loader.black.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/loader.white.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/outlines/beveled.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/outlines/custom.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/outlines/drop-shadow.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/outlines/glossy-dark.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/outlines/outer-glow.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/outlines/rounded-black.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/outlines/rounded-white.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/resize.gif">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/scrollarrows.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/zoom.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/zoomin.cur">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/graphics/zoomout.cur">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/highslide-full.packed.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/highslide-ie6.css">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/highslide.config.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/highslide.css">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/Highslide/highslide.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/html5.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jquery-1.7.2.min.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jquery.browser.min.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/images/ui-icons_222222_256x240.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/images/ui-icons_454545_256x240.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/images/ui-icons_888888_256x240.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/jquery-ui-1.8.17.custom.css">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/jquery-ui-1.8.17.custom.min.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/jquery-ui.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/jquery.datepicker.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/jquery.ui.core.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/jquery.ui.draggable.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/jquery.ui.mouse.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/jQueryUI/jquery.ui.widget.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/modernizr-2.6.1.min.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/libs/oldbrowser.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/lists/listadoArchivos.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/lists/listadoCapturaHoras.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/lists/listadoCheques.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/lists/listadoClientes.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/lists/listadoEmpresas.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/lists/listadoGastos.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/lists/listadoHerramientas.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/lists/listadoNomina.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/lists/listadoPrestamos.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/lists/listadoTareas.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/lists/listadoTrabajador.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/lists/login.js">
+      <publishTime>08/29/2017 21:51:40</publishTime>
+    </File>
+    <File Include="Quotation/js/Login.js">
+      <publishTime>10/29/2017 22:31:39</publishTime>
+    </File>
+    <File Include="Quotation/js/Quotation.js">
+      <publishTime>11/07/2017 23:09:08</publishTime>
+    </File>
+    <File Include="Quotation/js/RecoverPassword.js">
+      <publishTime>11/02/2017 20:26:38</publishTime>
+    </File>
+    <File Include="Quotation/js/Send.js">
+      <publishTime>11/05/2017 23:48:45</publishTime>
+    </File>
+    <File Include="Quotation/js/Utilities.js">
+      <publishTime>11/02/2017 21:17:09</publishTime>
+    </File>
+    <File Include="Quotation/Login.html">
+      <publishTime>11/02/2017 20:28:46</publishTime>
+    </File>
+    <File Include="Quotation/Quotation.html">
+      <publishTime>11/07/2017 23:17:34</publishTime>
+    </File>
+    <File Include="Quotation/RecoverPassword.html">
+      <publishTime>11/02/2017 17:39:47</publishTime>
+    </File>
+    <File Include="Quotation/Send.html">
+      <publishTime>11/02/2017 20:30:52</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>03/07/2017 09:36:46</publishTime>
     </File>
     <File Include="Scripts/bootstrap.min.js">
       <publishTime>03/07/2017 09:36:46</publishTime>
+    </File>
+    <File Include="Scripts/geo.js">
+      <publishTime>10/14/2017 19:14:41</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>03/07/2017 09:36:48</publishTime>
@@ -837,6 +2004,30 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="Scripts/modernizr-2.6.2.js">
       <publishTime>03/07/2017 09:36:50</publishTime>
     </File>
+    <File Include="Scripts/porcino/bootstrap.min.js">
+      <publishTime>10/25/2017 08:24:32</publishTime>
+    </File>
+    <File Include="Scripts/porcino/Chart.bundle.min.js">
+      <publishTime>10/25/2017 08:24:32</publishTime>
+    </File>
+    <File Include="Scripts/porcino/imageMapResizer.min.js">
+      <publishTime>10/17/2017 00:56:11</publishTime>
+    </File>
+    <File Include="Scripts/porcino/jquery.maphighlight.min.js">
+      <publishTime>10/17/2017 00:56:11</publishTime>
+    </File>
+    <File Include="Scripts/porcino/jquery.min.js">
+      <publishTime>10/25/2017 08:24:32</publishTime>
+    </File>
+    <File Include="Scripts/porcino/map_script.js">
+      <publishTime>10/25/2017 08:24:32</publishTime>
+    </File>
+    <File Include="Scripts/porcino/owl.carousel.min.js">
+      <publishTime>10/25/2017 08:24:32</publishTime>
+    </File>
+    <File Include="Scripts/porcino/porcino.js">
+      <publishTime>10/17/2017 00:59:08</publishTime>
+    </File>
     <File Include="Scripts/respond.js">
       <publishTime>03/07/2017 09:36:50</publishTime>
     </File>
@@ -853,10 +2044,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/19/2017 11:25:48</publishTime>
     </File>
     <File Include="Views/Blog/Index.cshtml">
-      <publishTime>05/03/2017 12:50:48</publishTime>
+      <publishTime>10/12/2017 00:28:33</publishTime>
     </File>
     <File Include="Views/Blog/Noticias.cshtml">
-      <publishTime>05/02/2017 17:05:22</publishTime>
+      <publishTime>10/12/2017 00:25:25</publishTime>
     </File>
     <File Include="Views/Distribuidor/Construccion.cshtml">
       <publishTime>05/08/2017 17:47:42</publishTime>
@@ -865,7 +2056,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/08/2017 15:08:10</publishTime>
     </File>
     <File Include="Views/Distribuidor/Red.cshtml">
-      <publishTime>05/05/2017 14:45:46</publishTime>
+      <publishTime>11/02/2017 20:35:35</publishTime>
     </File>
     <File Include="Views/Home/AvisoPrivacidad.cshtml">
       <publishTime>04/27/2017 09:49:10</publishTime>
@@ -883,19 +2074,25 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>04/27/2017 09:49:10</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>08/16/2017 09:47:24</publishTime>
+      <publishTime>10/17/2017 22:28:15</publishTime>
     </File>
     <File Include="Views/Home/MapaSitio.cshtml">
       <publishTime>04/27/2017 09:49:08</publishTime>
     </File>
     <File Include="Views/Home/Nosotros.cshtml">
-      <publishTime>04/27/2017 09:49:08</publishTime>
+      <publishTime>10/12/2017 00:44:49</publishTime>
     </File>
     <File Include="Views/Home/Plantas.cshtml">
       <publishTime>04/27/2017 09:49:08</publishTime>
     </File>
     <File Include="Views/Home/Salud.cshtml">
       <publishTime>04/27/2017 09:49:08</publishTime>
+    </File>
+    <File Include="Views/Prevision/Index.cshtml">
+      <publishTime>10/25/2017 08:30:51</publishTime>
+    </File>
+    <File Include="Views/Prevision/Porcino.cshtml">
+      <publishTime>10/25/2017 08:25:20</publishTime>
     </File>
     <File Include="Views/Productos/Busqueda.cshtml">
       <publishTime>04/27/2017 09:49:08</publishTime>
@@ -940,13 +2137,13 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/11/2017 11:01:52</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>05/05/2017 09:36:28</publishTime>
+      <publishTime>10/26/2017 08:34:27</publishTime>
     </File>
     <File Include="Views/Shared/_Nav.cshtml">
       <publishTime>04/28/2017 10:07:08</publishTime>
     </File>
     <File Include="Views/Shared/_NavContacto.cshtml">
-      <publishTime>05/10/2017 14:09:08</publishTime>
+      <publishTime>11/07/2017 23:08:39</publishTime>
     </File>
     <File Include="Views/Shared/_NavProductos.cshtml">
       <publishTime>04/27/2017 09:48:58</publishTime>
@@ -958,7 +2155,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>04/27/2017 09:48:56</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/30/2017 08:14:59</publishTime>
+      <publishTime>10/26/2017 08:39:33</publishTime>
     </File>
   </ItemGroup>
 </Project>
