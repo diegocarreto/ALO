@@ -263,6 +263,7 @@
     <Content Include="Content\css\prevision\owl.carousel.min.css" />
     <Content Include="Content\css\prevision\owl.theme.default.min.css" />
     <Content Include="Content\css\prevision\style.css" />
+    <Content Include="Content\css\slider.css" />
     <Content Include="Content\css\video.css" />
     <Content Include="Content\img\acuacultura\bernaqua-linea.png" />
     <Content Include="Content\img\acuacultura\bernaqua-logo-old.png" />
@@ -765,6 +766,7 @@
     <Content Include="Scripts\porcino\owl.carousel.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\slider.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

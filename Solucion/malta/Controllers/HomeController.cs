@@ -10,36 +10,31 @@ namespace malta.Controllers
         private MaltaDBEntities db = new MaltaDBEntities();
         public ActionResult Index()
         {
-
-            string nota_img = "";
-            string nota_id = "";
-            string nota_titulo = "";
-            string nota_autor = "";
-
-            IEnumerable<BlogShort> lst_data = db.Database.SqlQuery<BlogShort>("SELECT *  FROM blog WHERE especies LIKE '%|noticia_home|%' ORDER BY id DESC ");
+            IEnumerable<BlogShort> lst_data = db.Database.SqlQuery<BlogShort>("SELECT * FROM blog WHERE especies LIKE '%|noticia_home|%' ORDER BY Orden DESC");
             int numero = lst_data.ToList().Count;
-            if (numero > 0)
-            {
-                List<malta.Models.BlogShort> lista = (List<malta.Models.BlogShort>)lst_data.ToList();
-                nota_img = lista[0].Imagen;
-                nota_id = lista[0].Id + "";
-                nota_titulo = lista[0].Titulo;
-                nota_autor = lista[0].Autor;
-            }
             ViewBag.numero = numero;
 
-            ViewBag.nota_img = nota_img;
-            ViewBag.nota_id = nota_id;
-            ViewBag.nota_titulo = nota_titulo;
-            ViewBag.nota_autor = nota_autor;
+            if (numero > 0)
+            {
+               var lista = (List<malta.Models.BlogShort>)lst_data.ToList();
 
+                ViewBag.nota_img = lista[0].Imagen;
+                ViewBag.nota_id = lista[0].Id + "";
+                ViewBag.nota_titulo = lista[0].Titulo;
+                ViewBag.nota_autor = lista[0].Autor;
 
+                ViewBag.nota_img2 = lista[1].Imagen;
+                ViewBag.nota_id2 = lista[1].Id + "";
+                ViewBag.nota_titulo2 = lista[1].Titulo;
+                ViewBag.nota_autor2 = lista[1].Autor;
+            }
 
-            IEnumerable<especies> data = db.Database.SqlQuery<especies>("SELECT * FROM especies order by OrdenTipo ASC ");
+            var data = db.Database.SqlQuery<especies>("SELECT * FROM especies order by OrdenTipo ASC ");
             
             ViewBag.nav_blog = data.ToList();
 
             nav();
+
             return View();
         }
         public ActionResult MapaSitio()
