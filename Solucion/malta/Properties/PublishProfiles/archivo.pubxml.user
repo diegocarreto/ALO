@@ -13,10 +13,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>02/22/2013 08:43:40</publishTime>
     </File>
     <File Include="bin/BL.dll">
-      <publishTime>12/07/2017 06:51:07</publishTime>
+      <publishTime>01/24/2018 08:02:34</publishTime>
     </File>
     <File Include="bin/DAL.dll">
-      <publishTime>12/07/2017 06:51:07</publishTime>
+      <publishTime>01/24/2018 08:02:33</publishTime>
     </File>
     <File Include="bin/DTO.dll">
       <publishTime>12/07/2017 06:51:06</publishTime>
@@ -88,7 +88,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>01/28/2015 04:04:36</publishTime>
     </File>
     <File Include="bin/malta.dll">
-      <publishTime>12/07/2017 06:51:14</publishTime>
+      <publishTime>01/24/2018 08:02:40</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
       <publishTime>04/03/2015 17:07:22</publishTime>
@@ -233,6 +233,9 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     </File>
     <File Include="Content/css/prevision/style.css">
       <publishTime>10/25/2017 08:22:40</publishTime>
+    </File>
+    <File Include="Content/css/slider.css">
+      <publishTime>01/07/2018 18:07:45</publishTime>
     </File>
     <File Include="Content/css/video.css">
       <publishTime>10/17/2017 23:29:21</publishTime>
@@ -1698,6 +1701,9 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="Quotation/img/bg-noticias.jpg">
       <publishTime>10/08/2017 20:28:58</publishTime>
     </File>
+    <File Include="Quotation/img/camion.png">
+      <publishTime>10/26/2017 08:02:33</publishTime>
+    </File>
     <File Include="Quotation/img/camión.png">
       <publishTime>10/26/2017 08:02:33</publishTime>
     </File>
@@ -1963,7 +1969,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>11/02/2017 20:28:46</publishTime>
     </File>
     <File Include="Quotation/Quotation.html">
-      <publishTime>11/07/2017 23:17:34</publishTime>
+      <publishTime>12/10/2017 10:37:31</publishTime>
     </File>
     <File Include="Quotation/RecoverPassword.html">
       <publishTime>11/02/2017 17:39:47</publishTime>
@@ -2034,6 +2040,9 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="Scripts/respond.min.js">
       <publishTime>03/07/2017 09:36:50</publishTime>
     </File>
+    <File Include="Scripts/slider.js">
+      <publishTime>01/11/2018 08:49:59</publishTime>
+    </File>
     <File Include="Scripts/_references.js">
       <publishTime>05/05/2017 14:41:26</publishTime>
     </File>
@@ -2074,7 +2083,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>04/27/2017 09:49:10</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>10/17/2017 22:28:15</publishTime>
+      <publishTime>01/11/2018 08:39:34</publishTime>
     </File>
     <File Include="Views/Home/MapaSitio.cshtml">
       <publishTime>04/27/2017 09:49:08</publishTime>
@@ -2098,7 +2107,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>04/27/2017 09:49:08</publishTime>
     </File>
     <File Include="Views/Productos/Especie.cshtml">
-      <publishTime>04/27/2017 09:49:08</publishTime>
+      <publishTime>01/01/2018 22:53:16</publishTime>
     </File>
     <File Include="Views/Productos/Ficha.cshtml">
       <publishTime>05/02/2017 09:39:54</publishTime>
@@ -2143,7 +2152,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>04/28/2017 10:07:08</publishTime>
     </File>
     <File Include="Views/Shared/_NavContacto.cshtml">
-      <publishTime>11/07/2017 23:08:39</publishTime>
+      <publishTime>12/07/2017 07:12:33</publishTime>
     </File>
     <File Include="Views/Shared/_NavProductos.cshtml">
       <publishTime>04/27/2017 09:48:58</publishTime>

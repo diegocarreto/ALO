@@ -1,0 +1,82 @@
+#content{width: 100%;}
+#mainWrap{background: url(../images/bg_galax.jpg) no-repeat center center;
+  background-size: cover; min-height: 700px;}
+#mainWrap > .row {
+  min-height: 500px;
+}
+#estados{}
+#estados ul{display: block; margin: 0; padding: 0;}
+#estados ul li{list-style: none; display: block;width: 49%; float: left; margin: 5px 0; background: url(../images/arrow.png) no-repeat left center; padding-left: 15px;}
+#estados ul li a{display: block; padding: 3px 0; color: #009bff; font-size: 16px; transition: all linear 0.3s; -webkit-transition: all linear 0.3s; -moz-transition: all linear 0.3s;}
+#estados ul li:hover a{text-decoration: underline; color: #576065; padding-left: 15px; }
+#estados ul li a:focus, #estados ul li a:active{text-decoration: underline;padding-left: 15px;}
+
+
+.list_prod_animals { text-align: center; display: block; padding: 0; margin: 0;;}
+.list_prod_animals:before, .list_prod_animals:after{display: table; content: ""; clear: both;}
+.list_prod_animals li {
+  list-style: none;
+  display: inline-block;
+  width: 10%;
+  padding: 30px 0 0;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  margin:30px 25px;
+}
+.list_prod_animals li a {
+  display: block;
+  text-decoration: none;
+  color: #323232;
+  margin-top: 10px;
+}
+.list_prod_animals li a span {
+  color: #323232;
+  border-radius: 0 0 5px 5px;
+  display: block;
+  font-size: 14px;
+  padding: 10px 0;
+  transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  margin-top: 15px;
+}
+.list_prod_animals li:hover a span {
+  background: #337ab7;
+  color: #fff;
+}
+.mainTitle{text-align: center; background:#576065; font-size: 19px; color: #fff; font-weight: lighter;}
+
+/* Larger than mobile */
+@media (max-width: 400px) {
+  .list_prod_animals li {
+    width: 70% !important;
+    margin: auto;
+    padding: 5px 0 0;
+    margin-bottom: 20px;
+  }
+  .list_prod_animals li a span {
+    margin-top: 10px;
+  }
+}
+
+/* Larger than phablet */
+@media (max-width: 550px) {
+  .list_prod_animals > li {
+    width: 49%;
+  }
+}
+
+/* Larger than tablet */
+@media (max-width: 750px) {
+  .list_prod_animals > li {
+    width: 33%;
+  }
+}
+
+/* Larger than desktop */
+@media (max-width: 1000px) {
+  .list_prod_animals > li {
+    width: 30%;
+  }
+}

@@ -1,0 +1,9 @@
+Listado de camiones y peso       OK 
+Informacion para envio de mail   OK
+Clientes malta                   OK
+Plantas con todos sus datos      
+Lista de productos (Nuevos identificadores o folios, minimo, precios y sucursales alos que pertenecen)
+Litado de medididas (Saco, bultos etc.)
+Listado de correos a lo que se enviaran las copias (nombre, puesto, planta a la que pertenecen, tipo [copia o copiaoculta])
+
+ 
