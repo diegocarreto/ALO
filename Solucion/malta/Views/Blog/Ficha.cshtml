@@ -34,8 +34,6 @@
                 </div>
             </div>
         </section>
-
-
         <section id="articulos">
             <div class="row">
                 <div class="large-4 medium-4 columns">
@@ -43,9 +41,18 @@
                 </div>
                 <div class="large-8 medium-8 columns">
                     <h3>@Html.DisplayFor(modelItem => item.Subtitulo)</h3>
-                    <p class="fecha">@Html.DisplayFor(modelItem => item.Fecha)</p>
-                    <p class="fuente">@Html.DisplayFor(modelItem => item.Fuente)</p>
-                    <p class="fuente">@Html.DisplayFor(modelItem => item.Autor)</p>
+
+
+                    @{
+                        if (item.Formato != 2)
+                        {
+                            <p class="fecha">@Html.DisplayFor(modelItem => item.Fecha)</p>
+                            <p class="fuente">@Html.DisplayFor(modelItem => item.Fuente)</p>
+                            <p class="fuente">@Html.DisplayFor(modelItem => item.Autor)</p>
+                        }
+                    }
+
+
                     @{
                         string desc = "";
                         if (!String.IsNullOrEmpty(item.Descripcion))
@@ -53,7 +60,10 @@
                             desc = (item.Descripcion).ToString();
                         }
                     }
+
                     <p class="lead">@Html.Raw(System.Web.HttpUtility.HtmlDecode(desc))</p>
+
+
                     <div class="etiquetas">
                         <ul>
                             @{
@@ -73,33 +83,6 @@
                 </div>
             </div>
         </section>
-        <!--
-        <section id="articulos-relacionados">
-            <div class="row">
-                <div class="large-12 columns">
-                    <h3>Artículos relacionados</h3>
-                </div>
-            </div>
-            <div class="row small-up-1 medium-up-2 medium-up-3">
-                <div class="column">
-                    <img src="https://source.unsplash.com/1600x900/?cows" alt="">
-                    <h5><a href="#">Lorem ipsum dolor sit.</a></h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, ipsam.</p>
-                </div>
-                <div class="column">
-                    <img src="https://source.unsplash.com/1600x900/?cows" alt="">
-                    <h5><a href="#">Lorem ipsum dolor sit.</a></h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, amet.</p>
-                </div>
-                <div class="column">
-                    <img src="https://source.unsplash.com/1600x900/?cows" alt="">
-                    <h5><a href="#">Lorem ipsum dolor sit.</a></h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, sapiente.</p>
-                </div>
-            </div>
-        </section>
-            -->
-    
 }
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

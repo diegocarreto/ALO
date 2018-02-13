@@ -1,21 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Linq;
-using System.Net;
-using System.Web;
-using System.Web.Mvc;
-using malta.Models;
-
+﻿
 namespace malta.Controllers
 {
+    using BL;
+    using malta.Models;
+    using System;
+    using System.Collections.Generic;
+    using System.Data;
+    using System.Linq;
+    using System.Web.Mvc;
 
     // Controlador de las vistas para blog de noticias y articulos
     public class BlogController : Controller
     {
+        #region Members
 
-               
+        private NewsBl Bl;
+
+        #endregion
+
+        public BlogController()
+        {
+            this.Bl = new NewsBl();
+        }
+
         private MaltaDBEntities db = new MaltaDBEntities();//se hace instancia a la bd
 
         /// <summary>
@@ -24,10 +31,9 @@ namespace malta.Controllers
         /// <param name="idespecie"> separado por pipes para saber que especie o especies son buscadas</param>
         /// <param name="tipo"> tenemos dos tipos en la tabla blog </param>
         /// <returns></returns>
-        
         public ActionResult Index(string idespecie = "|0|", string tipo = "articulos")
         {
-            
+
 
             string[] split = idespecie.Split('|');///utilizamos doble pipe para separar el numero de la especie, ya sea 1,2,3... etc
             string where = "";
@@ -58,13 +64,13 @@ namespace malta.Controllers
                         }
                         count++;
                     }
-                    
+
                 }
                 string final = "(" + where + ") AND ([Extent1].[Tipo] = 'articulos' )";
                 where = final;
             }
-            
-           
+
+
 
             IEnumerable<BlogShort> lst_data = db.Database.SqlQuery<BlogShort>("SELECT [Project1].[Id] AS[Id], [Project1].[Titulo] AS[Titulo],[Project1].[Imagen] AS[Imagen], [Project1].[Descripcion] AS[Descripcion], [Project1].[Etiquetas] AS[Etiquetas], [Project1].[Especies] AS[Especies] FROM(SELECT [Extent1].[Id] AS[Id], [Extent1].[Fecha] AS[Fecha], [Extent1].[Titulo] AS[Titulo], [Extent1].[Descripcion] AS[Descripcion], [Extent1].[Etiquetas] AS[Etiquetas], [Extent1].[Imagen] AS[Imagen], [Extent1].[Especies] AS[Especies] FROM [dbo].[blog] AS[Extent1] WHERE  " + where + ")  AS[Project1] ORDER BY[Project1].[Fecha] ASC");
             //listamos todos los resultados del query y los pasamos como variable a travez del viewbag
@@ -76,7 +82,7 @@ namespace malta.Controllers
             string img_especie = "";
             if (idespecie.Equals("|0|"))//si el idespecie es 0, ponemos de imagen background en la busqueda el bg de logo malta
             {
-                ViewBag.nombre_especie ="Todas las especies ";
+                ViewBag.nombre_especie = "Todas las especies ";
                 ViewBag.img_especie = "Content/img/imago-malta.svg";
             }
             else
@@ -197,32 +203,30 @@ namespace malta.Controllers
 
             }
             catch (Exception) { }
-            
-            
+
+
             ViewBag.img_especie = img_especie;
 
             nav();
             return View();
         }
+
         /// <summary>
         /// Funcion para obtener una lista completa de todas las noticias y mandarlas
         /// directamente a la vista Noticias
         /// </summary>
         /// <returns>lista noticias</returns>
-
         public ActionResult Noticias()
         {
-            
+
             IEnumerable<BlogShort> lst_data = db.Database.SqlQuery<BlogShort>("SELECT [Project1].[Id] AS[Id], [Project1].[Titulo] AS[Titulo],[Project1].[Imagen] AS[Imagen], [Project1].[Descripcion] AS[Descripcion], [Project1].[Etiquetas] AS[Etiquetas], [Project1].[Especies] AS[Especies] FROM(SELECT [Extent1].[Id] AS[Id], [Extent1].[Fecha] AS[Fecha], [Extent1].[Titulo] AS[Titulo], [Extent1].[Descripcion] AS[Descripcion], [Extent1].[Etiquetas] AS[Etiquetas], [Extent1].[Imagen] AS[Imagen], [Extent1].[Especies] AS[Especies] FROM[dbo].[blog] AS[Extent1] WHERE  Tipo='noticias')  AS[Project1] ORDER BY[Project1].[Fecha] ASC");
 
             ViewBag.lst_data = lst_data.ToList();
             int numero = lst_data.ToList().Count;
-            ViewBag.numero = numero;            
+            ViewBag.numero = numero;
             nav();
             return View();
         }
-
-
 
         public void switchNav()
         {
@@ -234,6 +238,7 @@ namespace malta.Controllers
             }
             ViewBag.switchNav = html;
         }
+
         public void nav()
         {
             switchNav();
@@ -266,5 +271,18 @@ namespace malta.Controllers
             ViewBag.switch_nav = switch_nav;
         }
 
+        [HttpGet]
+        public JsonResult Slider(int Index = 1)
+        {
+            var result = this.Bl.Slider(Index);
+
+            return Json(new
+            {
+                result,
+                isCorrect = this.Bl.IsCorrect,
+                message = this.Bl.Message
+            },
+            JsonRequestBehavior.AllowGet);
+        }
     }
 }

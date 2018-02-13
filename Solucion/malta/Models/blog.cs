@@ -26,5 +26,7 @@ namespace malta.Models
         public string Imagen { get; set; }
         public string Autor { get; set; }
         public string Especies { get; set; }
+        public Nullable<int> Orden { get; set; }
+        public Nullable<int> Formato { get; set; }
     }
 }

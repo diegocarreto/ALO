@@ -10,23 +10,18 @@ namespace malta.Controllers
         private MaltaDBEntities db = new MaltaDBEntities();
         public ActionResult Index()
         {
-            IEnumerable<BlogShort> lst_data = db.Database.SqlQuery<BlogShort>("SELECT * FROM blog WHERE especies LIKE '%|noticia_home|%' ORDER BY Orden DESC");
+            IEnumerable<BlogShort> lst_data = db.Database.SqlQuery<BlogShort>("SELECT TOP 1 * FROM blog WHERE especies LIKE '%|noticia_home|%' ORDER BY Orden DESC");
             int numero = lst_data.ToList().Count;
             ViewBag.numero = numero;
 
             if (numero > 0)
             {
-               var lista = (List<malta.Models.BlogShort>)lst_data.ToList();
+               var lista = lst_data.ToList();
 
                 ViewBag.nota_img = lista[0].Imagen;
                 ViewBag.nota_id = lista[0].Id + "";
                 ViewBag.nota_titulo = lista[0].Titulo;
                 ViewBag.nota_autor = lista[0].Autor;
-
-                ViewBag.nota_img2 = lista[1].Imagen;
-                ViewBag.nota_id2 = lista[1].Id + "";
-                ViewBag.nota_titulo2 = lista[1].Titulo;
-                ViewBag.nota_autor2 = lista[1].Autor;
             }
 
             var data = db.Database.SqlQuery<especies>("SELECT * FROM especies order by OrdenTipo ASC ");

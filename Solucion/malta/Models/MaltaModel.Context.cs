@@ -35,5 +35,16 @@ namespace malta.Models
         public virtual DbSet<salud> salud { get; set; }
         public virtual DbSet<blog> blog { get; set; }
         public virtual DbSet<distribuidores> distribuidores { get; set; }
+        public virtual DbSet<camion> camion { get; set; }
+        public virtual DbSet<correo> correo { get; set; }
+        public virtual DbSet<cotizacion> cotizacion { get; set; }
+        public virtual DbSet<medidas> medidas { get; set; }
+        public virtual DbSet<planta> planta { get; set; }
+        public virtual DbSet<plantilla> plantilla { get; set; }
+        public virtual DbSet<precios> precios { get; set; }
+        public virtual DbSet<puesto> puesto { get; set; }
+        public virtual DbSet<usuario> usuario { get; set; }
+        public virtual DbSet<cotizacionDetalle> cotizacionDetalle { get; set; }
+        public virtual DbSet<visitas> visitas { get; set; }
     }
 }

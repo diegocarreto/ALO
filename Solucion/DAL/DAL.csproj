@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseDal.cs" />
+    <Compile Include="NewsDal.cs" />
     <Compile Include="QuotationDal.cs" />
     <Compile Include="AccountDal.cs" />
     <Compile Include="LogDal.cs" />

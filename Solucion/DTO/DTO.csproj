@@ -48,6 +48,7 @@
     <Compile Include="RequestList.cs" />
     <Compile Include="RequestProducts.cs" />
     <Compile Include="ResponseGeo.cs" />
+    <Compile Include="Slider.cs" />
     <Compile Include="Token.cs" />
     <Compile Include="Truck.cs" />
     <Compile Include="UserData.cs" />

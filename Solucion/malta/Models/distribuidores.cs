@@ -14,6 +14,12 @@ namespace malta.Models
     
     public partial class distribuidores
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public distribuidores()
+        {
+            this.cotizacion = new HashSet<cotizacion>();
+        }
+    
         public int Id { get; set; }
         public string No_cte { get; set; }
         public string Planta { get; set; }
@@ -32,5 +38,8 @@ namespace malta.Models
         public string Latitud { get; set; }
         public string Longitud { get; set; }
         public string Mapa { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<cotizacion> cotizacion { get; set; }
     }
 }

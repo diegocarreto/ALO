@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="ApiToken.cs" />
     <Compile Include="BaseBl.cs" />
+    <Compile Include="NewsBl.cs" />
     <Compile Include="QuotationBl.cs" />
     <Compile Include="AccountBl.cs" />
     <Compile Include="LogBl.cs" />

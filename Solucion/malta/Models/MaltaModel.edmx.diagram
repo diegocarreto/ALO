@@ -20,6 +20,30 @@
         <EntityTypeShape EntityType="maltaModel.salud" Width="1.5" PointX="5.875" PointY="4.625" />
         <EntityTypeShape EntityType="maltaModel.blog" Width="1.5" PointX="0.75" PointY="5.75" />
         <EntityTypeShape EntityType="maltaModel.distribuidores" Width="1.5" PointX="9.875" PointY="4.75" />
+        <EntityTypeShape EntityType="maltaModel.camion" Width="1.5" PointX="9.875" PointY="16.25" />
+        <EntityTypeShape EntityType="maltaModel.correo" Width="1.5" PointX="7.625" PointY="16.625" />
+        <EntityTypeShape EntityType="maltaModel.cotizacion" Width="1.5" PointX="12.125" PointY="15.375" />
+        <EntityTypeShape EntityType="maltaModel.medidas" Width="1.5" PointX="7.625" PointY="11.5" />
+        <EntityTypeShape EntityType="maltaModel.planta" Width="1.5" PointX="5.375" PointY="17.25" />
+        <EntityTypeShape EntityType="maltaModel.plantilla" Width="1.5" PointX="7.625" PointY="20.5" />
+        <EntityTypeShape EntityType="maltaModel.precios" Width="1.5" PointX="9.875" PointY="10.625" />
+        <EntityTypeShape EntityType="maltaModel.puesto" Width="1.5" PointX="5.375" PointY="14" />
+        <EntityTypeShape EntityType="maltaModel.usuario" Width="1.5" PointX="7.625" PointY="26.5" />
+        <EntityTypeShape EntityType="maltaModel.cotizacionDetalle" Width="1.5" PointX="14.375" PointY="8.5" />
+        <EntityTypeShape EntityType="maltaModel.visitas" Width="1.5" PointX="11.375" PointY="0.75" />
+        <AssociationConnector Association="maltaModel.FK_cotizacion_camion" />
+        <AssociationConnector Association="maltaModel.FK_correo_planta" />
+        <AssociationConnector Association="maltaModel.FK_correo_puesto" />
+        <AssociationConnector Association="maltaModel.FK_cotizacion_distribuidores" />
+        <AssociationConnector Association="maltaModel.FK_cotizacion_usuario1" />
+        <AssociationConnector Association="maltaModel.FK_cotizacionDetalle_cotizacion" />
+        <AssociationConnector Association="maltaModel.FK_cotizacionDetalle_medidas" />
+        <AssociationConnector Association="maltaModel.FK_precios_medidas" />
+        <AssociationConnector Association="maltaModel.FK_plantilla_planta" />
+        <AssociationConnector Association="maltaModel.FK_precios_planta" />
+        <AssociationConnector Association="maltaModel.FK_usuario_planta1" />
+        <AssociationConnector Association="maltaModel.FK_precios_productos" />
+        <AssociationConnector Association="maltaModel.FK_cotizacionDetalle_productos" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

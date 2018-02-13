@@ -49,43 +49,21 @@
             <div class="NewsOne" style="">
                 <div class="large-offset-1 large-5 medium-5 columns">
                     <div class="thumb-noticia">
-                        <img src="@ViewBag.nota_img" alt="" class="noticias-slider-img">
+                        <img id="sliderImg" src="@ViewBag.nota_img" alt="" class="noticias-slider-img">
                     </div>
                 </div>
                 <div class="large-6 medium-6 end columns noticias-slider-cuerpo">
-                    <a href="/Blog/ficha?id=@ViewBag.nota_id&tipo=noticias">
+                    <a id="sliderLink" href="/Blog/ficha?id=@ViewBag.nota_id&tipo=noticias">
                         <div class="info-articulo">
-                            <h4>@ViewBag.nota_titulo</h4> 
-                            @*<p class="autor">@ViewBag.nota_autor</p>*@
+                            <h4 id="sliderTitulo">@ViewBag.nota_titulo</h4> 
                         </div>
                     </a>
                 </div>
             </div>  
-            <div class="NewsTwo" style="display:none">
-                <div class="large-offset-1 large-5 medium-5 columns">
-                    <div class="thumb-noticia">
-                        <img src="@ViewBag.nota_img2" alt="" class="noticias-slider-img">
-                    </div>
-                </div>
-                <div class="large-6 medium-6 end columns noticias-slider-cuerpo">
-                    <a href="/Blog/ficha?id=@ViewBag.nota_id2&tipo=noticias">
-                        <div class="info-articulo">
-                            <h4>@ViewBag.nota_titulo2</h4> 
-                            @*<p class="autor">@ViewBag.nota_autor2</p>*@
-                        </div>
-                    </a>
-                </div>
-            </div>  
-
             <div class="noticias-slider">
-                <div class="noticias-slider-circulo" data-class="NewsOne">
-                </div>
-                &nbsp;
-                <div class="noticias-slider-circulo" data-class="NewsTwo">
-                </div>
-                &nbsp;
-                <div class="noticias-slider-circulo" data-class="NewsThree">
-                </div>
+                <img id="NewPrev" src="~/Content/img/slider/izquierda.png" height="50" width="50" style="cursor:pointer"/>
+                &nbsp;&nbsp;&nbsp;
+                <img id="NewsNext" src="~/Content/img/slider/derecha.png" height="50" width="50" style="cursor:pointer"/>
             </div>
         </div>
     </div>

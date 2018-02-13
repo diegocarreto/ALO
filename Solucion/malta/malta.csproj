@@ -200,6 +200,18 @@
       <DependentUpon>MaltaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\BlogShort.cs" />
+    <Compile Include="Models\camion.cs">
+      <DependentUpon>MaltaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\correo.cs">
+      <DependentUpon>MaltaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cotizacion.cs">
+      <DependentUpon>MaltaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cotizacionDetalle.cs">
+      <DependentUpon>MaltaModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\detalles_producto.cs">
       <DependentUpon>MaltaModel.tt</DependentUpon>
     </Compile>
@@ -239,18 +251,39 @@
     <Compile Include="Models\marcas.cs">
       <DependentUpon>MaltaModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\medidas.cs">
+      <DependentUpon>MaltaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\planta.cs">
+      <DependentUpon>MaltaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\plantilla.cs">
+      <DependentUpon>MaltaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\precios.cs">
+      <DependentUpon>MaltaModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ProductoJoin.cs" />
     <Compile Include="Models\productos.cs">
       <DependentUpon>MaltaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ProductosBuscador.cs" />
     <Compile Include="Models\ProductosMarca.cs" />
+    <Compile Include="Models\puesto.cs">
+      <DependentUpon>MaltaModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\salud.cs">
       <DependentUpon>MaltaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\SaludCompleto.cs" />
     <Compile Include="Models\SaludLista.cs" />
     <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>MaltaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usuario.cs">
+      <DependentUpon>MaltaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\visitas.cs">
       <DependentUpon>MaltaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -276,10 +309,14 @@
     <Content Include="Content\img\acuacultura\vitellus-cubeta.png" />
     <Content Include="Content\img\acuacultura\vitellus.png" />
     <Content Include="Content\img\articulos\bg-noticias.jpg" />
+    <Content Include="Content\img\articulos\cerdo-01.png" />
+    <Content Include="Content\img\articulos\cerdo-02.png" />
+    <Content Include="Content\img\articulos\cerdo-03.png" />
     <Content Include="Content\img\articulos\noticia-03.jpg" />
     <Content Include="Content\img\articulos\noticia-04.jpg" />
     <Content Include="Content\img\articulos\noticia-1.jpg" />
     <Content Include="Content\img\articulos\noticia-2.jpg" />
+    <Content Include="Content\img\articulos\Pigs.jpg" />
     <Content Include="Content\img\bg-aves-postura.jpg" />
     <Content Include="Content\img\bg-bagres.jpg" />
     <Content Include="Content\img\bg-borregos.jpg" />
@@ -403,6 +440,8 @@
     <Content Include="Content\img\salud\septicid-nat.png" />
     <Content Include="Content\img\salud\tripuricide.png" />
     <Content Include="Content\img\salud\vulkan.png" />
+    <Content Include="Content\img\slider\derecha.png" />
+    <Content Include="Content\img\slider\izquierda.png" />
     <Content Include="Content\template\RecoverPassword.html" />
     <Content Include="Content\template\Quotation.html" />
     <Content Include="Content\video\Neovia ANIMALES_1.mp4" />
@@ -768,6 +807,7 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\slider.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\HtmlPage1.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

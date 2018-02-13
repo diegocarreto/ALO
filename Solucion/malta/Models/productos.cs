@@ -18,6 +18,8 @@ namespace malta.Models
         public productos()
         {
             this.detalles_producto = new HashSet<detalles_producto>();
+            this.precios = new HashSet<precios>();
+            this.cotizacionDetalle = new HashSet<cotizacionDetalle>();
         }
     
         public int Id { get; set; }
@@ -44,5 +46,9 @@ namespace malta.Models
         public virtual productos productos1 { get; set; }
         public virtual productos productos2 { get; set; }
         public virtual lineas lineas { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<precios> precios { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<cotizacionDetalle> cotizacionDetalle { get; set; }
     }
 }
