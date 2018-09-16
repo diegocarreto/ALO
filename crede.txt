@@ -1,0 +1,125 @@
+WICAR
+		Sitio
+			URL administrador: http://www.wicarconsultores.mx/wp-login.php
+			Usuario:              adminwicar      aLo_@lo-r0ot|SA
+			Contraseña:        !@dm1n_Wic4r-2&17?W0rdPre$$
+
+		Hosting:
+
+			URL:        https://neubox.com/
+			Usuario:    guillermoalatriste@gmail.com          
+			Contrseña:  $EstaEs10mi#                        
+
+		Adwords:            
+			Usuario:    guillermoalatriste@gmail.com
+			Contraseña: willy8gol
+
+		FTP:
+			URL:	    ftp.wicarconsultores.mx
+			Usuario:    soporte@wicarconsultores.mx
+			Contraseña: 1Q!L8c%!&sC$
+		
+		MySQL
+			Bd:         wicarcon_wp1
+			User:       wicarcon_wp1
+			Password:   W1c@rc0n_wpONE
+			Host:       localhost
+			Prefix:     wp_
+
+
+                              Directorios protegidos
+                                               Nombre:     WP-ADMIN
+                                               Directorio:  /home/wicarcon/public_html/wp-admin
+                                               Usuario:     alo-Al0_@dm1n.com.mX
+                                               Password:  @lo-Alo_2o17.w1c4r-wp,@dm1n
+
+	MALTA
+
+		Hosting:
+			URL:	  http://1wpj.mj.am/link/1wpj/xswgtjn9/a1/_xRZ9L3CQ1r0pulfu2-xTg/aHR0cHM6Ly82NS45OS4yNTIuMTEwOjg0NDMv 
+			URL2:     https://65.99.252.110:8443/login_up.php3?success_redirect_url=https%3A%2F%2F65.99.252.110%3A8443%2F
+			
+			Usuario:  aloprueb
+			Password: 8E2xiD77pw
+
+			alopruebas.com.mx
+			Usuario:  diego
+			Password: Mv2h2t0$
+
+		FTP Desarrollo	
+			
+
+			FTP Hostname: ftp.alopruebas.com.mx
+			Usuario: aloprueb 
+			Password: 8E2xiD77pw 		
+
+		FTP Produccion
+			Usuario:                   divisional\dvit_hosting
+			Password:               Sitiomalta1
+			Servidor:                  200.78.224.220
+			FTP MaltaCleyton:   ftp://200.78.224.220/malta
+
+                                                Usuario:                    divisional\dvit_hosting
+                                                Password:                20Septiembre17
+                                                Servidor:                  200.78.224.220
+                                                FTP MaltaCleyton:    ftp://200.78.224.220/malta
+
+Redes y Datos
+
+                                Neubox
+
+	                               usuario:                    alo.neubox@gmail.com
+	                               contraseña               @lo2017
+	
+	 
+                                http://redesydatos.com.mx/
+
+                                               usuario:                    redesyda
+                                               contraseña:             J4h81yuNx3
+
+                                 http://redesydatos.com.mx/wp-admin/
+
+                                                                             usuario                       unispanalo
+                                                                             contraseña anterior:                  MD5  ->   $P$BhRz1qlf6GGqRnyenPJje7lkTEAiOZ.
+                                                                             contraseña nueva:    123456   MD5  ->    e10adc3949ba59abbe56e057f20f883e
+
+
+UNISPAN
+
+
+	Mexico
+
+
+		cPANEL
+			https://unispan.com.mx:2083/
+
+                               Usuario
+				unispan
+				Andamios.2017!
+
+	
+		URL
+
+			http://unispan.com.mx/
+			https://unispan.com.mx/wp/
+		Admin
+	
+			https://unispan.com.mx/wp/wp-login.php
+                                                https://unispan.com.mx/wp/alo2017/
+
+			unispanmexico
+                                                U14p@n_M#x1c0-17
+
+
+	Colombia
+
+		URL
+
+			https://unispan.com.co/
+
+		Admin
+			https://unispan.com.co/atila2788
+
+			Usuario
+				unispancolombia
+				Db*JIGDL2HICANI%IAPVse4h
