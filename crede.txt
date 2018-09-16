@@ -42,9 +42,6 @@ WICAR
 			Usuario:  aloprueb
 			Password: 8E2xiD77pw
 
-			alopruebas.com.mx
-			Usuario:  diego
-			Password: Mv2h2t0$
 
 		FTP Desarrollo	
 			
@@ -52,6 +49,10 @@ WICAR
 			FTP Hostname: ftp.alopruebas.com.mx
 			Usuario: aloprueb 
 			Password: 8E2xiD77pw 		
+
+			alopruebas.com.mx
+			Usuario:  diego
+			Password: Mv2h2t0$
 
 		FTP Produccion
 			Usuario:                   divisional\dvit_hosting
