@@ -41,6 +41,19 @@ WICAR
 			
 			Usuario:  aloprueb
 			Password: 8E2xiD77pw
+                                  Nner52&1
+
+		Cotizador
+
+			cotizador.alopruebas.com.mx
+			http://cotizador.alopruebas.com.mx/Quotation/login.html
+
+			Base de datos	
+				Servidor:   cotizador.alopruebas.com.mx
+				Nombre:     aloprueb_cotizador 
+				Usuario:    aloprueb_cotizador
+				Contraseña: @lopru3b_C0tizador
+				
 
 
 		FTP Desarrollo	
