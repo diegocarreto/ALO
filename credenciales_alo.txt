@@ -1,0 +1,41 @@
+Dominio:    alopruebas.com.mx
+Usuario:    ftp-pruebas
+Contraseña: Wb0h8*w3
+
+Dominio:    api.alopruebas.com.mx
+Usuario:    ftp-api
+Contraseña: Qcwf!143
+
+Dominio:    test.alopruebas.com.mx
+Usuario:    ftp-test
+Contraseña: roMt56~4
+
+Dominio:    malta.alopruebas.com.mx
+Usuario:    ftp-malta
+Contraseña: Aih9a^87
+
+********************************************************************
+********************************************************************
+Dominio:    acuicultura.alopruebas.com.mx
+Usuario:    ftp-acuicultura
+Contraseña: 2C0ssm?7
+
+Dominio:    caballos.alopruebas.com.mx
+Usuario:    ftp-caballos
+Contraseña: nfPe57^0
+
+********************************************************************
+********************************************************************
+Dominio:    fidelidad.alopruebas.com.mx
+Usuario:    ftp-fidelidad
+Contraseña: wSk89v%1
+
+Dominio:    fidelidad-api.alopruebas.com.mx
+Usuario:    ftp-fidelidada
+Contraseña: glp2$4T2
+
+********************************************************************
+********************************************************************
+Dominio:    cotizador.alopruebas.com.mx
+Usuario:    ftp-cotizador
+Contraseña: vHx3x88$
